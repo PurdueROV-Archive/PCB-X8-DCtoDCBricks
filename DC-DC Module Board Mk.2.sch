@@ -12218,6 +12218,16 @@ Intermediate DC-DC Bus Converter</description>
 <attribute name="BOM" value="INCLUDE"/>
 <attribute name="PARTNO" value="1.00MHCT-ND"/>
 </part>
+<part name="LED3" library="SparkFun" deviceset="LED" device="0603" value="GREEN">
+<attribute name="BOM" value="INCLUDE"/>
+<attribute name="PARTNO" value="160-1446-1-ND"/>
+</part>
+<part name="LED4" library="SparkFun" deviceset="LED" device="0603" value="RED">
+<attribute name="BOM" value="INCLUDE"/>
+<attribute name="PARTNO" value="160-1446-1-ND"/>
+</part>
+<part name="GND5" library="supply1" deviceset="GND" device=""/>
+<part name="GND6" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12305,20 +12315,30 @@ Intermediate DC-DC Bus Converter</description>
 <instance part="SUPPLY6" gate="G$1" x="101.6" y="124.46"/>
 <instance part="GND2" gate="1" x="160.02" y="114.3"/>
 <instance part="U$1" gate="G$1" x="129.54" y="124.46"/>
-<instance part="SUPPLY7" gate="G$1" x="96.52" y="86.36"/>
+<instance part="SUPPLY7" gate="G$1" x="99.06" y="86.36"/>
 <instance part="GND1" gate="1" x="180.34" y="86.36"/>
 <instance part="R5" gate="G$1" x="180.34" y="99.06" rot="R90">
 <attribute name="PARTNO" value="1.00MHCT-ND" x="180.34" y="99.06" size="0.0254" layer="96" font="vector" display="off"/>
 <attribute name="BOM" value="INCLUDE" x="180.34" y="99.06" size="0.0254" layer="96" font="vector" display="off"/>
 </instance>
-<instance part="R6" gate="G$1" x="96.52" y="99.06" rot="R90">
-<attribute name="PARTNO" value="1.00MHCT-ND" x="96.52" y="99.06" size="0.0254" layer="96" font="vector" display="off"/>
-<attribute name="BOM" value="INCLUDE" x="96.52" y="99.06" size="0.0254" layer="96" font="vector" display="off"/>
+<instance part="R6" gate="G$1" x="99.06" y="99.06" rot="R90">
+<attribute name="PARTNO" value="1.00MHCT-ND" x="99.06" y="99.06" size="0.0254" layer="96" font="vector" display="off"/>
+<attribute name="BOM" value="INCLUDE" x="99.06" y="99.06" size="0.0254" layer="96" font="vector" display="off"/>
 </instance>
 <instance part="R7" gate="G$1" x="167.64" y="99.06" rot="R90">
 <attribute name="PARTNO" value="1.00MHCT-ND" x="167.64" y="99.06" size="0.0254" layer="96" font="vector" display="off"/>
 <attribute name="BOM" value="INCLUDE" x="167.64" y="99.06" size="0.0254" layer="96" font="vector" display="off"/>
 </instance>
+<instance part="LED3" gate="G$1" x="93.98" y="109.22" rot="R270">
+<attribute name="PARTNO" value="160-1446-1-ND" x="93.98" y="109.22" size="0.0254" layer="96" font="vector" rot="R270" display="off"/>
+<attribute name="BOM" value="INCLUDE" x="93.98" y="109.22" size="0.0254" layer="96" font="vector" rot="R270" display="off"/>
+</instance>
+<instance part="LED4" gate="G$1" x="86.36" y="114.3" rot="R270">
+<attribute name="PARTNO" value="160-1446-1-ND" x="86.36" y="114.3" size="0.0254" layer="96" font="vector" rot="R270" display="off"/>
+<attribute name="BOM" value="INCLUDE" x="86.36" y="114.3" size="0.0254" layer="96" font="vector" rot="R270" display="off"/>
+</instance>
+<instance part="GND5" gate="1" x="81.28" y="96.52"/>
+<instance part="GND6" gate="1" x="88.9" y="96.52"/>
 </instances>
 <busses>
 </busses>
@@ -12360,6 +12380,16 @@ Intermediate DC-DC Bus Converter</description>
 <pinref part="R5" gate="G$1" pin="1"/>
 <junction x="180.34" y="93.98"/>
 <pinref part="R7" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="LED4" gate="G$1" pin="C"/>
+<wire x1="81.28" y1="114.3" x2="81.28" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="LED3" gate="G$1" pin="C"/>
+<wire x1="88.9" y1="109.22" x2="88.9" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="GND6" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -12492,14 +12522,14 @@ Intermediate DC-DC Bus Converter</description>
 </segment>
 <segment>
 <pinref part="SUPPLY7" gate="G$1" pin="GND1"/>
-<wire x1="96.52" y1="93.98" x2="96.52" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="93.98" x2="99.06" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="ON/OFF1"/>
-<wire x1="114.3" y1="104.14" x2="96.52" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="104.14" x2="99.06" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -12535,15 +12565,17 @@ Intermediate DC-DC Bus Converter</description>
 <net name="ALERT" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="SMBALERT"/>
-<wire x1="114.3" y1="114.3" x2="104.14" y2="114.3" width="0.1524" layer="91"/>
 <label x="104.14" y="114.3" size="1.778" layer="95"/>
+<pinref part="LED4" gate="G$1" pin="A"/>
+<wire x1="114.3" y1="114.3" x2="88.9" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PG" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PG"/>
-<wire x1="114.3" y1="109.22" x2="104.14" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="109.22" x2="96.52" y2="109.22" width="0.1524" layer="91"/>
 <label x="104.14" y="109.22" size="1.778" layer="95"/>
+<pinref part="LED3" gate="G$1" pin="A"/>
 </segment>
 </net>
 </nets>
