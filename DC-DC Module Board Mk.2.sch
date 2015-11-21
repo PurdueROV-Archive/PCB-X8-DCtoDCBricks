@@ -11997,41 +11997,6 @@ Source: http://www.infineon.com/upload/Document/cmc_upload/documents/011/3685/SP
 </deviceset>
 </devicesets>
 </library>
-<library name="supply2">
-<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
-GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
-Please keep in mind, that these devices are necessary for the
-automatic wiring of the supply signals.&lt;p&gt;
-The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
-In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-</packages>
-<symbols>
-<symbol name="GND1">
-<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<text x="-2.159" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="GND1" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="GND1" prefix="SUPPLY">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="GND1" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="PowerComponents">
 <packages>
 <package name="BRICK_DC-DC_CONVERTER">
@@ -12183,11 +12148,6 @@ Intermediate DC-DC Bus Converter</description>
 <attribute name="BOM" value="INCLUDE"/>
 <attribute name="PARTNO" value="SUM90P10-19L-E3CT-ND"/>
 </part>
-<part name="SUPPLY1" library="supply2" deviceset="GND1" device="" value="PGND"/>
-<part name="SUPPLY2" library="supply2" deviceset="GND1" device="" value="PGND"/>
-<part name="SUPPLY3" library="supply2" deviceset="GND1" device="" value="PGND"/>
-<part name="SUPPLY4" library="supply2" deviceset="GND1" device="" value="PGND"/>
-<part name="SUPPLY5" library="supply2" deviceset="GND1" device="" value="PGND"/>
 <part name="C22" library="SparkFun" deviceset="CAP_POL" device="7343" value="10uF">
 <attribute name="BOM" value="INCLUDE"/>
 <attribute name="PARTNO" value="399-3893-1-ND"/>
@@ -12201,10 +12161,8 @@ Intermediate DC-DC Bus Converter</description>
 <attribute name="PARTNO" value="445-5202-1-ND"/>
 </part>
 <part name="GND40" library="supply1" deviceset="GND" device=""/>
-<part name="SUPPLY6" library="supply2" deviceset="GND1" device="" value="PGND"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="U$1" library="PowerComponents" deviceset="BRICK_DC-DC_CONVERTER" device=""/>
-<part name="SUPPLY7" library="supply2" deviceset="GND1" device="" value="PGND"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="R5" library="resistor" deviceset="R-US_" device="R0603" value="10">
 <attribute name="BOM" value="INCLUDE"/>
@@ -12228,6 +12186,13 @@ Intermediate DC-DC Bus Converter</description>
 </part>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
+<part name="GND7" library="supply1" deviceset="GND" device=""/>
+<part name="GND8" library="supply1" deviceset="GND" device=""/>
+<part name="GND9" library="supply1" deviceset="GND" device=""/>
+<part name="GND10" library="supply1" deviceset="GND" device=""/>
+<part name="GND11" library="supply1" deviceset="GND" device=""/>
+<part name="GND12" library="supply1" deviceset="GND" device=""/>
+<part name="GND13" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12294,11 +12259,6 @@ Intermediate DC-DC Bus Converter</description>
 <attribute name="PARTNO" value="SUM90P10-19L-E3CT-ND" x="17.78" y="124.46" size="0.0254" layer="96" font="vector" display="off"/>
 <attribute name="BOM" value="INCLUDE" x="17.78" y="124.46" size="0.0254" layer="96" font="vector" display="off"/>
 </instance>
-<instance part="SUPPLY1" gate="G$1" x="15.24" y="96.52"/>
-<instance part="SUPPLY2" gate="G$1" x="40.64" y="96.52"/>
-<instance part="SUPPLY3" gate="G$1" x="50.8" y="96.52"/>
-<instance part="SUPPLY4" gate="G$1" x="60.96" y="96.52"/>
-<instance part="SUPPLY5" gate="G$1" x="71.12" y="96.52"/>
 <instance part="C22" gate="G$1" x="208.28" y="114.3">
 <attribute name="PARTNO" value="399-3893-1-ND" x="208.28" y="114.3" size="1.778" layer="96" display="off"/>
 <attribute name="BOM" value="INCLUDE" x="208.28" y="114.3" size="1.778" layer="96" display="off"/>
@@ -12312,10 +12272,8 @@ Intermediate DC-DC Bus Converter</description>
 <attribute name="BOM" x="228.6" y="114.3" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND40" gate="1" x="228.6" y="96.52"/>
-<instance part="SUPPLY6" gate="G$1" x="101.6" y="124.46"/>
 <instance part="GND2" gate="1" x="160.02" y="114.3"/>
 <instance part="U$1" gate="G$1" x="129.54" y="124.46"/>
-<instance part="SUPPLY7" gate="G$1" x="99.06" y="86.36"/>
 <instance part="GND1" gate="1" x="180.34" y="86.36"/>
 <instance part="R5" gate="G$1" x="180.34" y="99.06" rot="R90">
 <attribute name="PARTNO" value="1.00MHCT-ND" x="180.34" y="99.06" size="0.0254" layer="96" font="vector" display="off"/>
@@ -12339,6 +12297,13 @@ Intermediate DC-DC Bus Converter</description>
 </instance>
 <instance part="GND5" gate="1" x="81.28" y="96.52"/>
 <instance part="GND6" gate="1" x="88.9" y="96.52"/>
+<instance part="GND7" gate="1" x="71.12" y="96.52"/>
+<instance part="GND8" gate="1" x="60.96" y="96.52"/>
+<instance part="GND9" gate="1" x="50.8" y="96.52"/>
+<instance part="GND10" gate="1" x="40.64" y="96.52"/>
+<instance part="GND11" gate="1" x="15.24" y="96.52"/>
+<instance part="GND12" gate="1" x="99.06" y="86.36"/>
+<instance part="GND13" gate="1" x="101.6" y="119.38"/>
 </instances>
 <busses>
 </busses>
@@ -12390,6 +12355,42 @@ Intermediate DC-DC Bus Converter</description>
 <pinref part="LED3" gate="G$1" pin="C"/>
 <wire x1="88.9" y1="109.22" x2="88.9" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C6" gate="G$1" pin="-"/>
+<wire x1="71.12" y1="106.68" x2="71.12" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C14" gate="G$1" pin="-"/>
+<wire x1="60.96" y1="111.76" x2="60.96" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C11" gate="G$1" pin="2"/>
+<wire x1="50.8" y1="111.76" x2="50.8" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="LED1" gate="G$1" pin="C"/>
+<wire x1="40.64" y1="101.6" x2="40.64" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="GND10" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="15.24" y1="101.6" x2="15.24" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+</segment>
+<segment>
+<wire x1="99.06" y1="93.98" x2="99.06" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="GND12" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="-VIN"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+<wire x1="114.3" y1="127" x2="101.6" y2="127" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="127" x2="101.6" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -12487,43 +12488,6 @@ Intermediate DC-DC Bus Converter</description>
 <wire x1="12.7" y1="127" x2="7.62" y2="127" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="127" x2="7.62" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="G$1" pin="S"/>
-</segment>
-</net>
-<net name="GND1" class="0">
-<segment>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="15.24" y1="101.6" x2="15.24" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="SUPPLY1" gate="G$1" pin="GND1"/>
-</segment>
-<segment>
-<pinref part="LED1" gate="G$1" pin="C"/>
-<wire x1="40.64" y1="101.6" x2="40.64" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="SUPPLY2" gate="G$1" pin="GND1"/>
-</segment>
-<segment>
-<pinref part="C11" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="111.76" x2="50.8" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="SUPPLY3" gate="G$1" pin="GND1"/>
-</segment>
-<segment>
-<pinref part="C14" gate="G$1" pin="-"/>
-<wire x1="60.96" y1="111.76" x2="60.96" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="SUPPLY4" gate="G$1" pin="GND1"/>
-</segment>
-<segment>
-<pinref part="C6" gate="G$1" pin="-"/>
-<wire x1="71.12" y1="106.68" x2="71.12" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="SUPPLY5" gate="G$1" pin="GND1"/>
-</segment>
-<segment>
-<pinref part="SUPPLY6" gate="G$1" pin="GND1"/>
-<pinref part="U$1" gate="G$1" pin="-VIN"/>
-<wire x1="101.6" y1="127" x2="114.3" y2="127" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SUPPLY7" gate="G$1" pin="GND1"/>
-<wire x1="99.06" y1="93.98" x2="99.06" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$1" class="0">
