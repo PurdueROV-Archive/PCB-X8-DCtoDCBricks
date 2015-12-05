@@ -1369,22 +1369,6 @@ chip</description>
 <rectangle x1="0.9525" y1="-0.8763" x2="1.6891" y2="0.8763" layer="51"/>
 <rectangle x1="-0.3" y1="-0.7" x2="0.3" y2="0.7" layer="35"/>
 </package>
-<package name="C0603">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
-<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
-<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-</package>
 </packages>
 </library>
 <library name="PowerComponents">
@@ -1460,25 +1444,26 @@ chip</description>
 <pad name="P$1" x="0" y="3.6" drill="4.25" diameter="4.675"/>
 <pad name="P$2" x="0" y="-3.6" drill="4.25" diameter="4.675"/>
 </package>
-</packages>
-</library>
-<library name="con-molex">
-<description>&lt;b&gt;Molex Connectors&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="5566-2">
-<description>&lt;b&gt;Mini FIT connector 2 pol&lt;/b&gt;&lt;p&gt;
-Source: http://www.molex.com</description>
-<wire x1="-2.6" y1="4.5" x2="2.6" y2="4.5" width="0.254" layer="21"/>
-<wire x1="2.6" y1="4.5" x2="2.6" y2="-2.2" width="0.254" layer="21"/>
-<wire x1="2.6" y1="-3.3" x2="2.6" y2="-4.9" width="0.254" layer="21"/>
-<wire x1="2.6" y1="-4.9" x2="-2.6" y2="-4.9" width="0.254" layer="21"/>
-<wire x1="-2.6" y1="-4.9" x2="-2.6" y2="4.5" width="0.254" layer="21"/>
-<wire x1="2.6" y1="-2.2" x2="2.6" y2="-3.3" width="0.254" layer="21" curve="-180"/>
-<pad name="1" x="0" y="-2.75" drill="1.4" shape="square"/>
-<pad name="2" x="0" y="2.75" drill="1.4" shape="square"/>
-<text x="-1.27" y="5.08" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
+<package name="MEGA-FIT-8">
+<rectangle x1="0" y1="0" x2="31.5" y2="17.28" layer="39"/>
+<wire x1="3.51" y1="0" x2="3.51" y2="7.81" width="0.127" layer="21"/>
+<wire x1="3.51" y1="7.81" x2="0" y2="7.81" width="0.127" layer="21"/>
+<wire x1="0" y1="7.81" x2="0" y2="17.28" width="0.127" layer="21"/>
+<wire x1="0" y1="17.28" x2="31.5" y2="17.28" width="0.127" layer="21"/>
+<wire x1="31.5" y1="17.28" x2="31.5" y2="7.81" width="0.127" layer="21"/>
+<wire x1="31.5" y1="7.81" x2="27.99" y2="7.81" width="0.127" layer="21"/>
+<wire x1="27.99" y1="7.81" x2="27.99" y2="0" width="0.127" layer="21"/>
+<wire x1="27.99" y1="0" x2="3.51" y2="0" width="0.127" layer="21"/>
+<hole x="2.03" y="9.84" drill="3"/>
+<hole x="29.47" y="9.84" drill="3"/>
+<pad name="P4" x="7.2" y="3.81" drill="1.8"/>
+<pad name="P3" x="12.9" y="3.81" drill="1.8"/>
+<pad name="P2" x="18.6" y="3.81" drill="1.8"/>
+<pad name="P1" x="24.3" y="3.81" drill="1.8"/>
+<pad name="P8" x="7.2" y="9.51" drill="1.8"/>
+<pad name="P7" x="12.9" y="9.51" drill="1.8"/>
+<pad name="P6" x="18.6" y="9.51" drill="1.8"/>
+<pad name="P5" x="24.3" y="9.51" drill="1.8"/>
 </package>
 </packages>
 </library>
@@ -3133,7 +3118,6 @@ design rules under a new name.</description>
 <attribute name="PARTNO" value="RNCP1206FTD1K10CT-ND" x="5.08" y="16.51" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U$1" library="PowerComponents" package="BRICK_DC-DC_CONVERTER" value="BRICK_DC-DC_CONVERTER" x="20.32" y="43.18" rot="MR270"/>
-<element name="C1" library="resistor" package="C0603" value="100 nF" x="8.89" y="74.93"/>
 <element name="C2" library="rcl" package="C0603" value="2.2uF" x="-72.39" y="-57.15"/>
 <element name="C3" library="rcl" package="C0603" value="2.2uF" x="-64.77" y="-57.15"/>
 <element name="C4" library="rcl" package="C0603" value="0.1uF" x="-57.15" y="-57.15"/>
@@ -3200,14 +3184,6 @@ design rules under a new name.</description>
 <element name="C19" library="rcl" package="C3216" value="15u" x="33.02" y="21.59"/>
 <element name="C20" library="rcl" package="C3216" value="15u" x="31.75" y="15.24" rot="R270"/>
 <element name="C21" library="rcl" package="C0603" value="10u" x="12.7" y="13.97" rot="R270"/>
-<element name="X2" library="con-molex" package="5566-2" value="5566-2" x="3.81" y="77.47" rot="R180">
-<attribute name="OC_FARNELL" value="1822072" x="13.97" y="62.23" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="13.97" y="62.23" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="13.97" y="62.23" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="PARTNO" value="WM23800-ND" x="13.97" y="62.23" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MF" value="" x="13.97" y="62.23" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="BOM" value="INCLUDE" x="13.97" y="62.23" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
 <element name="C14" library="rcl" package="C0603" value=".1u" x="3.81" y="49.53" rot="R180"/>
 <element name="U$10" library="Connectors" package="MICRO-FIT-4-SMD" value="MICRO-FIT-4-SMD-PART" x="17.78" y="26.67">
 <attribute name="DIGIKEY-MALE-PN" value="WM1847-ND" x="17.78" y="26.67" size="1.778" layer="27" display="off"/>
@@ -3229,6 +3205,7 @@ design rules under a new name.</description>
 <element name="C22" library="ux-capacitor" package="NICHICON-UX-8X10" value="10uF" x="11.43" y="48.26" rot="R90"/>
 <element name="C23" library="ux-capacitor" package="NICHICON-UX-8X10" value="22uF" x="6.35" y="27.94" rot="R270"/>
 <element name="C24" library="ux-capacitor" package="NICHICON-UX-8X10" value="10uF" x="6.35" y="38.1" rot="R270"/>
+<element name="U$13" library="Connectors" package="MEGA-FIT-8" value="MEGA-FIT-8" x="-81.28" y="-92.71"/>
 </elements>
 <signals>
 <signal name="GND" airwireshidden="yes">
@@ -3241,7 +3218,6 @@ design rules under a new name.</description>
 <contactref element="R2" pad="1"/>
 <contactref element="R6" pad="1"/>
 <contactref element="U$1" pad="4"/>
-<contactref element="C1" pad="2"/>
 <contactref element="ASV" pad="2"/>
 <contactref element="C9" pad="2"/>
 <contactref element="C4" pad="2"/>
@@ -3280,7 +3256,6 @@ design rules under a new name.</description>
 <contactref element="C19" pad="2"/>
 <contactref element="C20" pad="2"/>
 <contactref element="C21" pad="2"/>
-<contactref element="X2" pad="1"/>
 <contactref element="C14" pad="2"/>
 <contactref element="C15" pad="2"/>
 <contactref element="C16" pad="2"/>
@@ -3290,11 +3265,18 @@ design rules under a new name.</description>
 <contactref element="C22" pad="-"/>
 <contactref element="C23" pad="-"/>
 <contactref element="C24" pad="-"/>
-<wire x1="3.81" y1="27.94" x2="3.81" y2="38.1" width="0" layer="19" extent="1-1"/>
-<wire x1="13.97" y1="48.26" x2="3.81" y2="27.94" width="0" layer="19" extent="1-1"/>
-<wire x1="-80.86" y1="-67.31" x2="13.97" y2="48.26" width="0" layer="19" extent="1-1"/>
-<wire x1="-79.16" y1="-62.23" x2="-80.86" y2="-67.31" width="0" layer="19" extent="1-1"/>
-<wire x1="-71.54" y1="-62.23" x2="-79.16" y2="-62.23" width="0" layer="19" extent="1-1"/>
+<contactref element="U$13" pad="P3"/>
+<contactref element="U$13" pad="P4"/>
+<contactref element="U$13" pad="P7"/>
+<contactref element="U$13" pad="P8"/>
+<wire x1="-68.38" y1="-88.9" x2="-74.08" y2="-88.9" width="0" layer="19" extent="1-1"/>
+<wire x1="-74.08" y1="-83.2" x2="-74.08" y2="-88.9" width="0" layer="19" extent="1-1"/>
+<wire x1="-68.38" y1="-83.2" x2="-68.38" y2="-88.9" width="0" layer="19" extent="1-1"/>
+<wire x1="-69.85" y1="-71.513" x2="-68.38" y2="-83.2" width="0" layer="19" extent="1-1"/>
+<wire x1="-66.04" y1="-71.513" x2="-69.85" y2="-71.513" width="0" layer="19" extent="1-1"/>
+<wire x1="-62.23" y1="-71.513" x2="-66.04" y2="-71.513" width="0" layer="19" extent="1-1"/>
+<wire x1="-58.42" y1="-71.513" x2="-62.23" y2="-71.513" width="0" layer="19" extent="1-1"/>
+<wire x1="-71.54" y1="-62.23" x2="-69.85" y2="-71.513" width="0" layer="19" extent="1-1"/>
 <wire x1="-71.54" y1="-57.15" x2="-71.54" y2="-62.23" width="0" layer="19" extent="1-1"/>
 <wire x1="-69.6375" y1="-50.62" x2="-71.54" y2="-57.15" width="0" layer="19" extent="1-1"/>
 <wire x1="-67.04" y1="-50.62" x2="-69.6375" y2="-50.62" width="0" layer="19" extent="1-1"/>
@@ -3306,6 +3288,8 @@ design rules under a new name.</description>
 <wire x1="-68.54" y1="-47.92" x2="-69.6375" y2="-50.62" width="0" layer="19" extent="1-1"/>
 <wire x1="-63.92" y1="-57.15" x2="-65.04" y2="-50.62" width="0" layer="19" extent="1-1"/>
 <wire x1="-63.92" y1="-62.23" x2="-63.92" y2="-57.15" width="0" layer="19" extent="1-1"/>
+<wire x1="-79.16" y1="-62.23" x2="-71.54" y2="-62.23" width="0" layer="19" extent="1-1"/>
+<wire x1="-80.86" y1="-67.31" x2="-79.16" y2="-62.23" width="0" layer="19" extent="1-1"/>
 <wire x1="-56.3" y1="-62.23" x2="-63.92" y2="-62.23" width="0" layer="19" extent="1-1"/>
 <wire x1="-56.3" y1="-57.15" x2="-56.3" y2="-62.23" width="0" layer="19" extent="1-1"/>
 <wire x1="-48.68" y1="-62.23" x2="-56.3" y2="-62.23" width="0" layer="19" extent="1-1"/>
@@ -3314,10 +3298,6 @@ design rules under a new name.</description>
 <wire x1="-41.06" y1="-57.15" x2="-42.33" y2="-62.23" width="0" layer="19" extent="1-1"/>
 <wire x1="-35.98" y1="-62.23" x2="-42.33" y2="-62.23" width="0" layer="19" extent="1-1"/>
 <wire x1="-33.44" y1="-57.15" x2="-35.98" y2="-62.23" width="0" layer="19" extent="1-1"/>
-<wire x1="-69.85" y1="-71.513" x2="-71.54" y2="-62.23" width="0" layer="19" extent="1-1"/>
-<wire x1="-66.04" y1="-71.513" x2="-69.85" y2="-71.513" width="0" layer="19" extent="1-1"/>
-<wire x1="-62.23" y1="-71.513" x2="-66.04" y2="-71.513" width="0" layer="19" extent="1-1"/>
-<wire x1="-58.42" y1="-71.513" x2="-62.23" y2="-71.513" width="0" layer="19" extent="1-1"/>
 <wire x1="-54.63" y1="-40.52" x2="-63.54" y2="-47.92" width="0" layer="19" extent="1-1"/>
 <wire x1="-32.76" y1="-38.1" x2="-33.44" y2="-57.15" width="0" layer="19" extent="1-1"/>
 <wire x1="-64.29" y1="-20.32" x2="-54.63" y2="-40.52" width="0" layer="19" extent="1-1"/>
@@ -3326,6 +3306,11 @@ design rules under a new name.</description>
 <wire x1="-69.29" y1="-7.62" x2="-72.39" y2="-15.72" width="0" layer="19" extent="1-1"/>
 <wire x1="-77.795" y1="-22.815" x2="-69.29" y2="-20.32" width="0" layer="19" extent="1-1"/>
 <wire x1="3.81" y1="19.57" x2="-32.76" y2="-38.1" width="0" layer="19" extent="1-1"/>
+<wire x1="3.81" y1="27.94" x2="3.81" y2="19.57" width="0" layer="19" extent="1-1"/>
+<wire x1="3.81" y1="38.1" x2="3.81" y2="27.94" width="0" layer="19" extent="1-1"/>
+<wire x1="2.96" y1="44.45" x2="3.81" y2="38.1" width="0" layer="19" extent="1-1"/>
+<wire x1="2.96" y1="46.99" x2="2.96" y2="44.45" width="0" layer="19" extent="1-1"/>
+<wire x1="2.96" y1="49.53" x2="2.96" y2="46.99" width="0" layer="19" extent="1-1"/>
 <wire x1="12.7" y1="13.12" x2="3.81" y2="19.57" width="0" layer="19" extent="1-1"/>
 <wire x1="23.71" y1="13.97" x2="12.7" y2="13.12" width="0" layer="19" extent="1-1"/>
 <wire x1="24.32" y1="16.78" x2="23.71" y2="13.97" width="0" layer="19" extent="1-1"/>
@@ -3335,14 +3320,10 @@ design rules under a new name.</description>
 <wire x1="18.63" y1="24.13" x2="21.59" y2="23.71" width="0" layer="19" extent="1-1"/>
 <wire x1="14.82" y1="24.13" x2="18.63" y2="24.13" width="0" layer="19" extent="1-1"/>
 <wire x1="34.42" y1="21.59" x2="27.94" y2="17.78" width="0" layer="19" extent="1-1"/>
-<wire x1="2.96" y1="44.45" x2="14.82" y2="24.13" width="0" layer="19" extent="1-1"/>
-<wire x1="2.96" y1="46.99" x2="2.96" y2="44.45" width="0" layer="19" extent="1-1"/>
-<wire x1="2.96" y1="49.53" x2="2.96" y2="46.99" width="0" layer="19" extent="1-1"/>
-<wire x1="13.97" y1="55.13" x2="2.96" y2="49.53" width="0" layer="19" extent="1-1"/>
+<wire x1="13.97" y1="48.26" x2="2.96" y2="46.99" width="0" layer="19" extent="1-1"/>
+<wire x1="13.97" y1="55.13" x2="13.97" y2="48.26" width="0" layer="19" extent="1-1"/>
 <wire x1="20.32" y1="71.54" x2="13.97" y2="55.13" width="0" layer="19" extent="1-1"/>
 <wire x1="15.24" y1="74.51" x2="20.32" y2="71.54" width="0" layer="19" extent="1-1"/>
-<wire x1="9.74" y1="74.93" x2="15.24" y2="74.51" width="0" layer="19" extent="1-1"/>
-<wire x1="3.81" y1="80.22" x2="9.74" y2="74.93" width="0" layer="19" extent="1-1"/>
 <wire x1="27.94" y1="68.58" x2="20.32" y2="71.54" width="0" layer="19" extent="1-1"/>
 <wire x1="80.62" y1="4.05" x2="34.42" y2="21.59" width="0" layer="19" extent="1-1"/>
 <wire x1="85.94" y1="6.35" x2="80.62" y2="4.05" width="0" layer="19" extent="1-1"/>
@@ -3367,10 +3348,14 @@ design rules under a new name.</description>
 </signal>
 <signal name="VCC">
 <contactref element="Q1" pad="2"/>
-<contactref element="C1" pad="1"/>
-<contactref element="X2" pad="2"/>
-<wire x1="3.81" y1="74.72" x2="8.04" y2="74.93" width="0" layer="19" extent="1-1"/>
-<wire x1="3.81" y1="68.83" x2="3.81" y2="74.72" width="0" layer="19" extent="1-1"/>
+<contactref element="U$13" pad="P2"/>
+<contactref element="U$13" pad="P1"/>
+<contactref element="U$13" pad="P6"/>
+<contactref element="U$13" pad="P5"/>
+<wire x1="-56.98" y1="-88.9" x2="-62.68" y2="-88.9" width="0" layer="19" extent="1-1"/>
+<wire x1="-62.68" y1="-83.2" x2="-62.68" y2="-88.9" width="0" layer="19" extent="1-1"/>
+<wire x1="-56.98" y1="-83.2" x2="-56.98" y2="-88.9" width="0" layer="19" extent="1-1"/>
+<wire x1="3.81" y1="68.83" x2="-56.98" y2="-83.2" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="U$1" pad="2"/>
