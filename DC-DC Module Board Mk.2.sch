@@ -17241,6 +17241,11 @@ General-purpose diode for high-speed switching</description>
 <wire x1="436.88" y1="180.34" x2="441.96" y2="180.34" width="0.1524" layer="91"/>
 <label x="441.96" y="180.34" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U$30" gate="G$1" pin="P2"/>
+<wire x1="436.88" y1="157.48" x2="441.96" y2="157.48" width="0.1524" layer="91"/>
+<label x="441.96" y="157.48" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="N$7" class="0">
 <segment>
@@ -17420,11 +17425,6 @@ General-purpose diode for high-speed switching</description>
 <wire x1="322.58" y1="53.34" x2="327.66" y2="53.34" width="0.1524" layer="91"/>
 <label x="327.66" y="53.34" size="1.27" layer="95" xref="yes"/>
 </segment>
-<segment>
-<pinref part="U$30" gate="G$1" pin="P3"/>
-<wire x1="436.88" y1="162.56" x2="441.96" y2="162.56" width="0.1524" layer="91"/>
-<label x="441.96" y="162.56" size="1.27" layer="95" xref="yes"/>
-</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
@@ -17490,11 +17490,6 @@ General-purpose diode for high-speed switching</description>
 <pinref part="U$28" gate="G$1" pin="P2"/>
 <wire x1="322.58" y1="48.26" x2="327.66" y2="48.26" width="0.1524" layer="91"/>
 <label x="327.66" y="48.26" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$30" gate="G$1" pin="P2"/>
-<wire x1="436.88" y1="157.48" x2="441.96" y2="157.48" width="0.1524" layer="91"/>
-<label x="441.96" y="157.48" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="ALERT" class="0">
@@ -17563,11 +17558,6 @@ General-purpose diode for high-speed switching</description>
 <pinref part="U$28" gate="G$1" pin="P1"/>
 <wire x1="322.58" y1="43.18" x2="327.66" y2="43.18" width="0.1524" layer="91"/>
 <label x="327.66" y="43.18" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$30" gate="G$1" pin="P1"/>
-<wire x1="436.88" y1="152.4" x2="441.96" y2="152.4" width="0.1524" layer="91"/>
-<label x="441.96" y="152.4" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="VCAP_1" class="0">
@@ -17826,7 +17816,8 @@ General-purpose diode for high-speed switching</description>
 <label x="10.16" y="-35.56" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="58.42" y1="-205.74" x2="48.26" y2="-205.74" width="0.1524" layer="91"/>
+<pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="55.88" y1="-205.74" x2="48.26" y2="-205.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PIN41" class="0">
@@ -18066,6 +18057,11 @@ General-purpose diode for high-speed switching</description>
 <wire x1="45.72" y1="-127" x2="53.34" y2="-127" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="-127" x2="53.34" y2="-129.54" width="0.1524" layer="91"/>
 <junction x="45.72" y="-127"/>
+</segment>
+<segment>
+<pinref part="U$30" gate="G$1" pin="P3"/>
+<wire x1="436.88" y1="162.56" x2="441.96" y2="162.56" width="0.1524" layer="91"/>
+<label x="441.96" y="162.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$59" class="0">
