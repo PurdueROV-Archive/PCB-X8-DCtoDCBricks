@@ -17240,11 +17240,51 @@ General-purpose diode for high-speed switching</description>
 <junction x="345.44" y="-38.1"/>
 </segment>
 </net>
-<net name="PIN14" class="0">
+<net name="PA0_PWM" class="0">
 <segment>
 <pinref part="U$5" gate="G$1" pin="PA0_WKUP"/>
 <wire x1="17.78" y1="-17.78" x2="10.16" y2="-17.78" width="0.1524" layer="91"/>
 <label x="10.16" y="-17.78" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$20" gate="G$1" pin="P4"/>
+<wire x1="322.58" y1="180.34" x2="327.66" y2="180.34" width="0.1524" layer="91"/>
+<label x="327.66" y="180.34" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$15" gate="G$1" pin="P4"/>
+<wire x1="322.58" y1="200.66" x2="327.66" y2="200.66" width="0.1524" layer="91"/>
+<label x="327.66" y="200.66" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$23" gate="G$1" pin="P4"/>
+<wire x1="322.58" y1="160.02" x2="327.66" y2="160.02" width="0.1524" layer="91"/>
+<label x="327.66" y="160.02" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$24" gate="G$1" pin="P4"/>
+<wire x1="322.58" y1="139.7" x2="327.66" y2="139.7" width="0.1524" layer="91"/>
+<label x="327.66" y="139.7" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$25" gate="G$1" pin="P4"/>
+<wire x1="322.58" y1="119.38" x2="327.66" y2="119.38" width="0.1524" layer="91"/>
+<label x="327.66" y="119.38" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$26" gate="G$1" pin="P4"/>
+<wire x1="322.58" y1="99.06" x2="327.66" y2="99.06" width="0.1524" layer="91"/>
+<label x="327.66" y="99.06" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$27" gate="G$1" pin="P4"/>
+<wire x1="322.58" y1="78.74" x2="327.66" y2="78.74" width="0.1524" layer="91"/>
+<label x="327.66" y="78.74" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$28" gate="G$1" pin="P4"/>
+<wire x1="322.58" y1="58.42" x2="327.66" y2="58.42" width="0.1524" layer="91"/>
+<label x="327.66" y="58.42" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PIN15" class="0">
@@ -17999,46 +18039,6 @@ General-purpose diode for high-speed switching</description>
 <pinref part="U$30" gate="G$1" pin="P4"/>
 <wire x1="436.88" y1="167.64" x2="441.96" y2="167.64" width="0.1524" layer="91"/>
 <label x="441.96" y="167.64" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$28" gate="G$1" pin="P4"/>
-<wire x1="322.58" y1="58.42" x2="327.66" y2="58.42" width="0.1524" layer="91"/>
-<label x="327.66" y="58.42" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$15" gate="G$1" pin="P4"/>
-<wire x1="322.58" y1="200.66" x2="327.66" y2="200.66" width="0.1524" layer="91"/>
-<label x="327.66" y="200.66" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$20" gate="G$1" pin="P4"/>
-<wire x1="322.58" y1="180.34" x2="327.66" y2="180.34" width="0.1524" layer="91"/>
-<label x="327.66" y="180.34" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$23" gate="G$1" pin="P4"/>
-<wire x1="322.58" y1="160.02" x2="327.66" y2="160.02" width="0.1524" layer="91"/>
-<label x="327.66" y="160.02" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$24" gate="G$1" pin="P4"/>
-<wire x1="322.58" y1="139.7" x2="327.66" y2="139.7" width="0.1524" layer="91"/>
-<label x="327.66" y="139.7" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$25" gate="G$1" pin="P4"/>
-<wire x1="322.58" y1="119.38" x2="327.66" y2="119.38" width="0.1524" layer="91"/>
-<label x="327.66" y="119.38" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$26" gate="G$1" pin="P4"/>
-<wire x1="322.58" y1="99.06" x2="327.66" y2="99.06" width="0.1524" layer="91"/>
-<label x="327.66" y="99.06" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$27" gate="G$1" pin="P4"/>
-<wire x1="322.58" y1="78.74" x2="327.66" y2="78.74" width="0.1524" layer="91"/>
-<label x="327.66" y="78.74" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PWM_IN" class="0">
