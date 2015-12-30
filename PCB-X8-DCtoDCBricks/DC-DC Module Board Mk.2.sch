@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -15778,6 +15778,7 @@ General-purpose diode for high-speed switching</description>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
+<part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="FRAME3" library="frames" deviceset="FRAME_A_L" device=""/>
 <part name="D3" library="SparkFun-LED" deviceset="LED-YELLOW" device="0603" value="Yellow"/>
 <part name="D4" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED"/>
@@ -16179,6 +16180,7 @@ General-purpose diode for high-speed switching</description>
 <instance part="+3V2" gate="G$1" x="220.98" y="-20.32"/>
 <instance part="+3V3" gate="G$1" x="193.04" y="-63.5"/>
 <instance part="+3V4" gate="G$1" x="99.06" y="-12.7"/>
+<instance part="GND21" gate="1" x="35.56" y="-27.94"/>
 <instance part="FRAME3" gate="G$1" x="292.1" y="-220.98"/>
 <instance part="FRAME3" gate="G$2" x="462.28" y="-220.98"/>
 <instance part="D3" gate="G$1" x="76.2" y="-175.26" rot="R90"/>
@@ -16400,6 +16402,12 @@ General-purpose diode for high-speed switching</description>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="111.76" y1="165.1" x2="99.06" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="165.1" x2="99.06" y2="160.02" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$2" pin="PB2"/>
+<wire x1="45.72" y1="-22.86" x2="35.56" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="-22.86" x2="35.56" y2="-25.4" width="0.1524" layer="91"/>
+<pinref part="GND21" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
@@ -17075,11 +17083,6 @@ General-purpose diode for high-speed switching</description>
 <wire x1="88.9" y1="-175.26" x2="88.9" y2="-185.42" width="0.1524" layer="91"/>
 <junction x="88.9" y="-185.42"/>
 <label x="88.9" y="-213.36" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$5" gate="G$2" pin="PB2"/>
-<wire x1="45.72" y1="-22.86" x2="40.64" y2="-22.86" width="0.1524" layer="91"/>
-<label x="40.64" y="-22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VCAP_1" class="0">
@@ -17973,38 +17976,7 @@ General-purpose diode for high-speed switching</description>
 <label x="10.16" y="-48.26" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="+12V4" class="0">
-<segment>
-<pinref part="U$29" gate="G$1" pin="P4"/>
-<wire x1="436.88" y1="195.58" x2="441.96" y2="195.58" width="0.1524" layer="91"/>
-<label x="441.96" y="195.58" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$29" gate="G$1" pin="P3"/>
-<wire x1="436.88" y1="190.5" x2="441.96" y2="190.5" width="0.1524" layer="91"/>
-<label x="441.96" y="190.5" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="PWM_OUT" class="0">
-<segment>
-<pinref part="R18" gate="G$1" pin="1"/>
-<wire x1="373.38" y1="-53.34" x2="388.62" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="373.38" y1="-50.8" x2="373.38" y2="-53.34" width="0.1524" layer="91"/>
-<pinref part="U$12" gate="G$1" pin="D"/>
-<wire x1="365.76" y1="-53.34" x2="373.38" y2="-53.34" width="0.1524" layer="91"/>
-<junction x="373.38" y="-53.34"/>
-<label x="378.46" y="-53.34" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$30" gate="G$1" pin="P4"/>
-<wire x1="436.88" y1="167.64" x2="441.96" y2="167.64" width="0.1524" layer="91"/>
-<label x="441.96" y="167.64" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$28" gate="G$1" pin="P4"/>
-<wire x1="322.58" y1="58.42" x2="327.66" y2="58.42" width="0.1524" layer="91"/>
-<label x="327.66" y="58.42" size="1.27" layer="95" xref="yes"/>
-</segment>
+<net name="PWM" class="0">
 <segment>
 <pinref part="U$15" gate="G$1" pin="P4"/>
 <wire x1="322.58" y1="200.66" x2="327.66" y2="200.66" width="0.1524" layer="91"/>
@@ -18039,6 +18011,39 @@ General-purpose diode for high-speed switching</description>
 <pinref part="U$27" gate="G$1" pin="P4"/>
 <wire x1="322.58" y1="78.74" x2="327.66" y2="78.74" width="0.1524" layer="91"/>
 <label x="327.66" y="78.74" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$28" gate="G$1" pin="P4"/>
+<wire x1="322.58" y1="58.42" x2="327.66" y2="58.42" width="0.1524" layer="91"/>
+<label x="327.66" y="58.42" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="+12V4" class="0">
+<segment>
+<pinref part="U$29" gate="G$1" pin="P4"/>
+<wire x1="436.88" y1="195.58" x2="441.96" y2="195.58" width="0.1524" layer="91"/>
+<label x="441.96" y="195.58" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$29" gate="G$1" pin="P3"/>
+<wire x1="436.88" y1="190.5" x2="441.96" y2="190.5" width="0.1524" layer="91"/>
+<label x="441.96" y="190.5" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="PWM_OUT" class="0">
+<segment>
+<pinref part="R18" gate="G$1" pin="1"/>
+<wire x1="373.38" y1="-53.34" x2="388.62" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="373.38" y1="-50.8" x2="373.38" y2="-53.34" width="0.1524" layer="91"/>
+<pinref part="U$12" gate="G$1" pin="D"/>
+<wire x1="365.76" y1="-53.34" x2="373.38" y2="-53.34" width="0.1524" layer="91"/>
+<junction x="373.38" y="-53.34"/>
+<label x="378.46" y="-53.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$30" gate="G$1" pin="P4"/>
+<wire x1="436.88" y1="167.64" x2="441.96" y2="167.64" width="0.1524" layer="91"/>
+<label x="441.96" y="167.64" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PWM_IN" class="0">
