@@ -15820,7 +15820,7 @@ General-purpose diode for high-speed switching</description>
 <attribute name="BOM" value="INCLUDE"/>
 <attribute name="PARTNO" value="160-1446-1-ND"/>
 </part>
-<part name="R2" library="resistor" deviceset="R-US_" device="R2512" value="2300">
+<part name="R2" library="resistor" deviceset="R-US_" device="R2512" value="2700">
 <attribute name="BOM" value="INCLUDE"/>
 <attribute name="PARTNO" value="RHC2512FT2K20CT-ND"/>
 </part>
