@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -17422,13 +17422,6 @@ General-purpose diode for high-speed switching</description>
 <label x="38.1" y="-30.48" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PIN61" class="0">
-<segment>
-<pinref part="U$5" gate="G$2" pin="PB8"/>
-<wire x1="45.72" y1="-38.1" x2="40.64" y2="-38.1" width="0.1524" layer="91"/>
-<label x="38.1" y="-38.1" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="PIN62" class="0">
 <segment>
 <pinref part="U$5" gate="G$2" pin="PB9"/>
@@ -17685,9 +17678,9 @@ General-purpose diode for high-speed switching</description>
 <label x="149.86" y="-147.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$5" gate="G$2" pin="PB11"/>
-<wire x1="45.72" y1="-45.72" x2="40.64" y2="-45.72" width="0.1524" layer="91"/>
-<label x="38.1" y="-45.72" size="1.778" layer="95"/>
+<pinref part="U$5" gate="G$2" pin="PB7"/>
+<wire x1="45.72" y1="-35.56" x2="40.64" y2="-35.56" width="0.1524" layer="91"/>
+<label x="38.1" y="-35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCL1" class="0">
@@ -17701,9 +17694,9 @@ General-purpose diode for high-speed switching</description>
 <label x="149.86" y="-160.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$5" gate="G$2" pin="PB10"/>
-<wire x1="45.72" y1="-43.18" x2="40.64" y2="-43.18" width="0.1524" layer="91"/>
-<label x="38.1" y="-43.18" size="1.778" layer="95"/>
+<pinref part="U$5" gate="G$2" pin="PB8"/>
+<wire x1="45.72" y1="-38.1" x2="40.64" y2="-38.1" width="0.1524" layer="91"/>
+<label x="38.1" y="-38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$63" class="0">
@@ -18071,11 +18064,18 @@ General-purpose diode for high-speed switching</description>
 <label x="38.1" y="-33.02" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PB7" class="0">
+<net name="PB10" class="0">
 <segment>
-<pinref part="U$5" gate="G$2" pin="PB7"/>
-<wire x1="45.72" y1="-35.56" x2="40.64" y2="-35.56" width="0.1524" layer="91"/>
-<label x="38.1" y="-35.56" size="1.778" layer="95"/>
+<pinref part="U$5" gate="G$2" pin="PB10"/>
+<wire x1="45.72" y1="-43.18" x2="40.64" y2="-43.18" width="0.1524" layer="91"/>
+<label x="38.1" y="-43.18" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PB11" class="0">
+<segment>
+<pinref part="U$5" gate="G$2" pin="PB11"/>
+<wire x1="45.72" y1="-45.72" x2="40.64" y2="-45.72" width="0.1524" layer="91"/>
+<label x="38.1" y="-45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
