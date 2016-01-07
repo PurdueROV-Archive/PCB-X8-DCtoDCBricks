@@ -2937,7 +2937,7 @@ Based on the following sources:
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="GoldPhoenix">
+<designrules name="GoldPhoenix *">
 <description language="en">
 
 &lt;b&gt;Gold Phoenix PCB Design Rules&lt;/b&gt;
@@ -2965,9 +2965,9 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <param name="msDrill" value="10mil"/>
 <param name="msMicroVia" value="9.99mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
-<param name="rvPadTop" value="0.25"/>
-<param name="rvPadInner" value="0.25"/>
-<param name="rvPadBottom" value="0.25"/>
+<param name="rvPadTop" value="0"/>
+<param name="rvPadInner" value="0"/>
+<param name="rvPadBottom" value="0"/>
 <param name="rvViaOuter" value="0.25"/>
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
@@ -5565,7 +5565,6 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <approved hash="5,1,07c8482ebb10040c"/>
 <approved hash="5,1,07c85eb2a26c0bec"/>
 <approved hash="5,1,07c867769428046c"/>
-<approved hash="5,1,0c00d23bc533306d"/>
 <approved hash="5,1,c6c56c5aef17d473"/>
 <approved hash="5,1,4f3a2807ac443909"/>
 <approved hash="5,1,c6d57892fadfd563"/>
@@ -5644,6 +5643,7 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <approved hash="5,16,f7c85f9aeb46d3ef"/>
 <approved hash="5,16,f7c86c32d7cedccf"/>
 <approved hash="5,16,f7c8665edd02dc6f"/>
+<approved hash="5,1,0c00d23bc533306d"/>
 </errors>
 </board>
 </drawing>
