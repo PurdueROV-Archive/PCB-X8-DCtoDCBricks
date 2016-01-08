@@ -3306,9 +3306,18 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <attribute name="VALUE" x="125.895" y="94.345" size="0.4064" layer="27" rot="R270"/>
 </element>
 <element name="U$2" library="Connectors" package="XT60" value="XT60" x="95.25" y="54.61" rot="R90"/>
-<element name="C22" library="ux-capacitor" package="NICHICON-UX-8X10" value="10uF" x="120.65" y="91.44"/>
-<element name="C23" library="ux-capacitor" package="NICHICON-UX-8X10" value="22uF" x="100.33" y="91.44"/>
-<element name="C24" library="ux-capacitor" package="NICHICON-UX-8X10" value="10uF" x="110.49" y="91.44"/>
+<element name="C22" library="ux-capacitor" package="NICHICON-UX-8X10" value="10uF" x="120.65" y="91.44" smashed="yes">
+<attribute name="NAME" x="116.54" y="98.32" size="1.27" layer="25"/>
+<attribute name="VALUE" x="116.84" y="96.39" size="1.27" layer="27"/>
+</element>
+<element name="C23" library="ux-capacitor" package="NICHICON-UX-8X10" value="22uF" x="100.33" y="91.44" smashed="yes">
+<attribute name="NAME" x="96.22" y="98.52" size="1.27" layer="25"/>
+<attribute name="VALUE" x="96.22" y="96.19" size="1.27" layer="27"/>
+</element>
+<element name="C24" library="ux-capacitor" package="NICHICON-UX-8X10" value="10uF" x="110.49" y="91.44" smashed="yes">
+<attribute name="NAME" x="106.68" y="98.42" size="1.27" layer="25"/>
+<attribute name="VALUE" x="106.48" y="96.59" size="1.27" layer="27"/>
+</element>
 <element name="U$13" library="Connectors" package="MEGA-FIT-8" value="MEGA-FIT-8" x="176.53" y="90.17" rot="R180"/>
 <element name="LED5" library="SparkFun" package="LED-0603" value="GREEN" x="176.53" y="97.79">
 <attribute name="PARTNO" value="160-1446-1-ND" x="171.45" y="109.22" size="1.778" layer="27" display="off"/>
@@ -3436,9 +3445,18 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <attribute name="NAME" x="68.885" y="91.375" size="0.4064" layer="25" rot="R270"/>
 <attribute name="VALUE" x="68.845" y="92.775" size="0.4064" layer="27" rot="R270"/>
 </element>
-<element name="C73" library="ux-capacitor" package="NICHICON-UX-8X10" value="10uF" x="58.42" y="91.44"/>
-<element name="C74" library="ux-capacitor" package="NICHICON-UX-8X10" value="22uF" x="38.1" y="91.44"/>
-<element name="C75" library="ux-capacitor" package="NICHICON-UX-8X10" value="10uF" x="48.26" y="91.44"/>
+<element name="C73" library="ux-capacitor" package="NICHICON-UX-8X10" value="10uF" x="58.42" y="91.44" smashed="yes">
+<attribute name="NAME" x="54.41" y="98.62" size="1.27" layer="25"/>
+<attribute name="VALUE" x="54.41" y="96.49" size="1.27" layer="27"/>
+</element>
+<element name="C74" library="ux-capacitor" package="NICHICON-UX-8X10" value="22uF" x="38.1" y="91.44" smashed="yes">
+<attribute name="NAME" x="33.89" y="98.72" size="1.27" layer="25"/>
+<attribute name="VALUE" x="33.89" y="96.59" size="1.27" layer="27"/>
+</element>
+<element name="C75" library="ux-capacitor" package="NICHICON-UX-8X10" value="10uF" x="48.26" y="91.44" smashed="yes">
+<attribute name="NAME" x="44.45" y="98.62" size="1.27" layer="25"/>
+<attribute name="VALUE" x="44.25" y="96.59" size="1.27" layer="27"/>
+</element>
 <element name="LED1" library="SparkFun" package="LED-0603" value="GREEN" x="92.71" y="3.81" rot="R90">
 <attribute name="BOM" value="INCLUDE" x="92.71" y="3.81" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PARTNO" value="160-1446-1-ND" x="92.71" y="3.81" size="1.778" layer="27" rot="R90" display="off"/>
@@ -3460,8 +3478,8 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <element name="R27" library="resistor" package="R0603" value="0" x="140.97" y="15.24" smashed="yes" rot="R270">
 <attribute name="BOM" value="INCLUDE" x="140.97" y="15.24" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="PARTNO" value="1.00MHCT-ND" x="140.97" y="15.24" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="141.605" y="15.875" size="0.4064" layer="25" rot="R270"/>
-<attribute name="VALUE" x="139.065" y="15.875" size="0.4064" layer="27" rot="R270"/>
+<attribute name="NAME" x="139.805" y="14.975" size="0.4064" layer="25" rot="R270"/>
+<attribute name="VALUE" x="139.765" y="16.275" size="0.4064" layer="27" rot="R270"/>
 </element>
 <element name="R28" library="resistor" package="R0603" value="10k" x="95.25" y="16.51" smashed="yes" rot="R180">
 <attribute name="BOM" value="INCLUDE" x="95.25" y="16.51" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3512,9 +3530,18 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <attribute name="NAME" x="132.285" y="32.755" size="0.4064" layer="25" rot="R270"/>
 <attribute name="VALUE" x="132.245" y="34.355" size="0.4064" layer="27" rot="R270"/>
 </element>
-<element name="C64" library="ux-capacitor" package="NICHICON-UX-8X10" value="10uF" x="121.92" y="33.02"/>
-<element name="C71" library="ux-capacitor" package="NICHICON-UX-8X10" value="22uF" x="101.6" y="33.02"/>
-<element name="C72" library="ux-capacitor" package="NICHICON-UX-8X10" value="10uF" x="111.76" y="33.02"/>
+<element name="C64" library="ux-capacitor" package="NICHICON-UX-8X10" value="10uF" x="121.92" y="33.02" smashed="yes">
+<attribute name="NAME" x="118.11" y="38.9" size="1.27" layer="25"/>
+<attribute name="VALUE" x="118.21" y="37.47" size="1.27" layer="27"/>
+</element>
+<element name="C71" library="ux-capacitor" package="NICHICON-UX-8X10" value="22uF" x="101.6" y="33.02" smashed="yes">
+<attribute name="NAME" x="97.59" y="38.8" size="1.27" layer="25"/>
+<attribute name="VALUE" x="97.59" y="37.37" size="1.27" layer="27"/>
+</element>
+<element name="C72" library="ux-capacitor" package="NICHICON-UX-8X10" value="10uF" x="111.76" y="33.02" smashed="yes">
+<attribute name="NAME" x="107.85" y="38.9" size="1.27" layer="25"/>
+<attribute name="VALUE" x="107.95" y="37.47" size="1.27" layer="27"/>
+</element>
 <element name="LED24" library="SparkFun" package="LED-0603" value="GREEN" x="38.354" y="13.2334" rot="R270">
 <attribute name="BOM" value="INCLUDE" x="38.354" y="13.2334" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="PARTNO" value="160-1446-1-ND" x="38.354" y="13.2334" size="1.778" layer="27" rot="R270" display="off"/>
@@ -3576,17 +3603,35 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <attribute name="NAME" x="24.765" y="34.29" size="0.4064" layer="25" rot="R90"/>
 <attribute name="VALUE" x="24.805" y="36.19" size="0.4064" layer="27" rot="R90"/>
 </element>
-<element name="C99" library="rcl" package="C0603" value=".1u" x="71.12" y="30.48" rot="R270"/>
-<element name="C100" library="rcl" package="C0603" value=".1u" x="68.58" y="30.48" rot="R270"/>
-<element name="C101" library="rcl" package="C0603" value=".1u" x="73.66" y="30.48" rot="R270"/>
-<element name="C102" library="ux-capacitor" package="NICHICON-UX-8X10" value="10uF" x="80.01" y="36.83" rot="R180"/>
-<element name="C103" library="ux-capacitor" package="NICHICON-UX-8X10" value="22uF" x="62.23" y="36.83" rot="R180"/>
-<element name="C104" library="ux-capacitor" package="NICHICON-UX-8X10" value="10uF" x="71.12" y="36.83" rot="R180"/>
+<element name="C99" library="rcl" package="C0603" value=".1u" x="71.12" y="30.48" smashed="yes" rot="R270">
+<attribute name="NAME" x="70.055" y="30.215" size="0.4064" layer="25" rot="R270"/>
+<attribute name="VALUE" x="70.015" y="31.815" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="C100" library="rcl" package="C0603" value=".1u" x="68.58" y="30.48" smashed="yes" rot="R270">
+<attribute name="NAME" x="67.515" y="30.415" size="0.4064" layer="25" rot="R270"/>
+<attribute name="VALUE" x="67.475" y="31.815" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="C101" library="rcl" package="C0603" value=".1u" x="73.66" y="30.48" smashed="yes" rot="R270">
+<attribute name="NAME" x="72.595" y="30.515" size="0.4064" layer="25" rot="R270"/>
+<attribute name="VALUE" x="72.555" y="31.915" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="C102" library="ux-capacitor" package="NICHICON-UX-8X10" value="10uF" x="80.01" y="36.83" smashed="yes" rot="R180">
+<attribute name="NAME" x="77.92" y="42.55" size="0.4064" layer="25" rot="R180"/>
+<attribute name="VALUE" x="77.92" y="41.68" size="0.4064" layer="27" rot="R180"/>
+</element>
+<element name="C103" library="ux-capacitor" package="NICHICON-UX-8X10" value="22uF" x="62.23" y="36.83" smashed="yes" rot="R180">
+<attribute name="NAME" x="60.14" y="42.35" size="0.4064" layer="25" rot="R180"/>
+<attribute name="VALUE" x="60.14" y="41.68" size="0.4064" layer="27" rot="R180"/>
+</element>
+<element name="C104" library="ux-capacitor" package="NICHICON-UX-8X10" value="10uF" x="71.12" y="36.83" smashed="yes" rot="R180">
+<attribute name="NAME" x="69.03" y="42.55" size="0.4064" layer="25" rot="R180"/>
+<attribute name="VALUE" x="69.03" y="41.68" size="0.4064" layer="27" rot="R180"/>
+</element>
 <element name="R29" library="resistor" package="R0603" value="0" x="140.97" y="2.54" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="1.00MHCT-ND" x="140.97" y="2.54" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="BOM" value="INCLUDE" x="140.97" y="2.54" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="140.335" y="1.905" size="0.4064" layer="25" rot="R90"/>
-<attribute name="VALUE" x="142.875" y="1.905" size="0.4064" layer="27" rot="R90"/>
+<attribute name="NAME" x="140.235" y="1.305" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="140.175" y="3.305" size="0.4064" layer="27" rot="R90"/>
 </element>
 <element name="J$7" library="Other" package="MICRO_B" value="MICROUSB" x="0" y="33.02" rot="R270"/>
 <element name="RN1" library="DiscreteComponents" package="EXBV4V" value="" x="7.2136" y="33.3248" smashed="yes" rot="R270">
@@ -5341,17 +5386,15 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <contactref element="U$22" pad="6"/>
 <contactref element="R43" pad="2"/>
 <polygon width="0.4064" layer="16" isolate="0.8128">
-<vertex x="25.4" y="87.63"/>
+<vertex x="24.13" y="87.63"/>
 <vertex x="54.61" y="87.63"/>
-<vertex x="54.61" y="85.09"/>
 <vertex x="54.61" y="49.53"/>
 <vertex x="85.09" y="49.53"/>
 <vertex x="85.09" y="48.26"/>
-<vertex x="85.09" y="43.18"/>
-<vertex x="50.8" y="43.18"/>
+<vertex x="83.69" y="41.98"/>
+<vertex x="49.4" y="41.98"/>
 <vertex x="50.8" y="83.82"/>
 <vertex x="24.13" y="83.82"/>
-<vertex x="24.13" y="87.63"/>
 </polygon>
 <wire x1="30.2768" y1="89.8368" x2="30.48" y2="90.04" width="0.4064" layer="1"/>
 <wire x1="28.1432" y1="89.8368" x2="27.94" y2="90.04" width="0.4064" layer="1"/>
