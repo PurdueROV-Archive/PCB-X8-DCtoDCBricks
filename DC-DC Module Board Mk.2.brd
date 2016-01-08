@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.001" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3152,15 +3152,15 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <attribute name="DIGIKEY" value="535-10066-1-ND" x="33.9344" y="-24.5872" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C12" library="rcl" package="C0603" value="0.1uF" x="2.1082" y="23.6982" smashed="yes" rot="R90">
-<attribute name="NAME" x="1.4732" y="23.0632" size="0.4064" layer="25" rot="R90"/>
-<attribute name="VALUE" x="4.0132" y="23.0632" size="1.27" layer="27" rot="R90"/>
+<attribute name="NAME" x="1.3732" y="22.3632" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="1.3132" y="23.8632" size="0.4064" layer="27" rot="R90"/>
 </element>
 <element name="U$4" library="DiscreteComponents" package="SW_2512" value="SWITCH" x="9.525" y="24.1046" smashed="yes" rot="R90">
-<attribute name="VALUE" x="12.7" y="21.5646" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="11.5" y="23.3646" size="0.3048" layer="27" rot="R90"/>
 </element>
 <element name="U$5" library="Other" package="LQFP64" value="STM32F405" x="11.8364" y="10.3124" rot="R180"/>
 <element name="U$6" library="DiscreteComponents" package="SW_2512" value="SWITCH" x="4.3942" y="24.13" smashed="yes" rot="R90">
-<attribute name="VALUE" x="7.5692" y="21.59" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="6.3692" y="23.29" size="0.3048" layer="27" rot="R90"/>
 </element>
 <element name="R1" library="rcl" package="R0603" value="10K" x="6.8834" y="23.1394" smashed="yes" rot="MR180">
 <attribute name="NAME" x="6.2484" y="22.5044" size="0.4064" layer="26" rot="MR180"/>
@@ -3170,32 +3170,68 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <attribute name="NAME" x="6.1214" y="24.2824" size="0.4064" layer="26" rot="MR180"/>
 <attribute name="VALUE" x="6.1214" y="26.8224" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="D3" library="SparkFun-LED" package="LED-0603" value="Yellow" x="2.667" y="44.6278" rot="R90">
+<element name="D3" library="SparkFun-LED" package="LED-0603" value="Yellow" x="2.667" y="44.6278" smashed="yes" rot="R90">
 <attribute name="PROD_ID" value="DIO-09003" x="100.457" y="21.7678" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="1.556" y="45.7293" size="0.4064" layer="25" rot="R180"/>
+<attribute name="VALUE" x="4.083" y="45.7073" size="0.4064" layer="27" rot="R180"/>
 </element>
-<element name="D4" library="SparkFun-LED" package="LED-0603" value="RED" x="2.667" y="42.8498" rot="R90">
+<element name="D4" library="SparkFun-LED" package="LED-0603" value="RED" x="2.667" y="42.8498" smashed="yes" rot="R90">
 <attribute name="PROD_ID" value="DIO-00819" x="100.457" y="12.3698" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="1.456" y="43.8513" size="0.4064" layer="25" rot="R180"/>
+<attribute name="VALUE" x="3.283" y="43.8293" size="0.4064" layer="27" rot="R180"/>
 </element>
-<element name="D5" library="SparkFun-LED" package="LED-0603" value="BLUE" x="2.667" y="41.0718" rot="R90">
+<element name="D5" library="SparkFun-LED" package="LED-0603" value="BLUE" x="2.667" y="41.0718" smashed="yes" rot="R90">
 <attribute name="PROD_ID" value="DIO-08575" x="100.457" y="2.9718" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="1.456" y="42.0733" size="0.4064" layer="25" rot="R180"/>
+<attribute name="VALUE" x="3.683" y="42.1513" size="0.4064" layer="27" rot="R180"/>
 </element>
-<element name="D6" library="SparkFun-LED" package="LED-0603" value="GREEN" x="2.667" y="39.2938" rot="R90">
+<element name="D6" library="SparkFun-LED" package="LED-0603" value="GREEN" x="2.667" y="39.2938" smashed="yes" rot="R90">
 <attribute name="PROD_ID" value="DIO-00821" x="100.457" y="-6.4262" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="1.456" y="40.3953" size="0.4064" layer="25" rot="R180"/>
+<attribute name="VALUE" x="3.683" y="40.3733" size="0.4064" layer="27" rot="R180"/>
 </element>
 <element name="R4" library="rcl" package="R0603" value="200R\" x="5.715" y="44.6278" smashed="yes">
-<attribute name="NAME" x="5.207" y="44.958" size="1.27" layer="25"/>
-<attribute name="VALUE" x="5.08" y="42.7228" size="1.27" layer="27"/>
+<attribute name="NAME" x="4.807" y="45.358" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="6.08" y="45.3228" size="0.4064" layer="27"/>
 </element>
-<element name="R10" library="rcl" package="R0603" value="200R" x="5.715" y="42.8498"/>
-<element name="R11" library="rcl" package="R0603" value="200R" x="5.715" y="41.0718"/>
-<element name="R12" library="rcl" package="R0603" value="200R" x="5.715" y="39.2938"/>
-<element name="U$8" library="MAX3051 Library" package="SOT23-8L" value="MAX3051MAX3051" x="4.8514" y="2.2098" rot="R270"/>
-<element name="U$9" library="DiscreteComponents" package="SOT-23-BSS138" value="BSS138" x="21.7678" y="28.829"/>
-<element name="BSS138" library="DiscreteComponents" package="SOT-23-BSS138" value="n-chanel mosfet" x="21.5138" y="24.0284"/>
-<element name="R13" library="rcl" package="R0603" value="4.7k" x="24.0538" y="23.5966" rot="R90"/>
-<element name="R14" library="rcl" package="R0603" value="4.7k" x="24.3078" y="28.3718" rot="R90"/>
-<element name="R15" library="rcl" package="R0603" value="4.7k" x="19.05" y="23.5712" rot="R90"/>
-<element name="R16" library="rcl" package="R0603" value="4.7k" x="19.2532" y="28.3972" rot="R90"/>
+<element name="R10" library="rcl" package="R0603" value="200R" x="5.715" y="42.8498" smashed="yes">
+<attribute name="NAME" x="4.78" y="43.5848" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="6.18" y="43.5448" size="0.4064" layer="27"/>
+</element>
+<element name="R11" library="rcl" package="R0603" value="200R" x="5.715" y="41.0718" smashed="yes">
+<attribute name="NAME" x="4.78" y="41.8068" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="6.08" y="41.7668" size="0.4064" layer="27"/>
+</element>
+<element name="R12" library="rcl" package="R0603" value="200R" x="5.715" y="39.2938" smashed="yes">
+<attribute name="NAME" x="4.78" y="40.0288" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="6.08" y="39.9888" size="0.4064" layer="27"/>
+</element>
+<element name="U$8" library="MAX3051 Library" package="SOT23-8L" value="MAX3051MAX3051" x="4.8514" y="2.2098" smashed="yes" rot="R270">
+<attribute name="NAME" x="4.5464" y="3.9148" size="0.3048" layer="25"/>
+<attribute name="VALUE" x="3.1464" y="0.2348" size="0.3048" layer="27"/>
+</element>
+<element name="U$9" library="DiscreteComponents" package="SOT-23-BSS138" value="BSS138" x="21.7678" y="28.829" smashed="yes">
+<attribute name="VALUE" x="20.9708" y="26.607" size="0.3048" layer="27" ratio="10"/>
+</element>
+<element name="BSS138" library="DiscreteComponents" package="SOT-23-BSS138" value="n-chanel mosfet" x="21.5138" y="24.0284" smashed="yes">
+<attribute name="VALUE" x="19.8168" y="21.9064" size="0.3048" layer="27" ratio="10"/>
+</element>
+<element name="R13" library="rcl" package="R0603" value="4.7k" x="24.0538" y="23.5966" smashed="yes" rot="R90">
+<attribute name="NAME" x="24.9188" y="22.9616" size="0.254" layer="25" rot="R90"/>
+<attribute name="VALUE" x="24.9588" y="24.0616" size="0.254" layer="27" rot="R90"/>
+</element>
+<element name="R14" library="rcl" package="R0603" value="4.7k" x="24.3078" y="28.3718" smashed="yes" rot="R90">
+<attribute name="NAME" x="23.6728" y="27.2368" size="0.254" layer="25" rot="R90"/>
+<attribute name="VALUE" x="23.7128" y="28.5368" size="0.254" layer="27" rot="R90"/>
+</element>
+<element name="R15" library="rcl" package="R0603" value="4.7k" x="19.05" y="23.5712" smashed="yes" rot="R90">
+<attribute name="NAME" x="18.315" y="22.4362" size="0.254" layer="25" rot="R90"/>
+<attribute name="VALUE" x="18.255" y="23.8362" size="0.254" layer="27" rot="R90"/>
+</element>
+<element name="R16" library="rcl" package="R0603" value="4.7k" x="19.2532" y="28.3972" smashed="yes" rot="R90">
+<attribute name="NAME" x="18.5182" y="27.2622" size="0.254" layer="25" rot="R90"/>
+<attribute name="VALUE" x="18.4582" y="28.3622" size="0.254" layer="27" rot="R90"/>
+</element>
 <element name="R19" library="resistor" package="R0603" value="1k" x="95.25" y="83.82" rot="R90">
 <attribute name="PARTNO" value="1.00MHCT-ND" x="95.25" y="83.82" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="BOM" value="INCLUDE" x="95.25" y="83.82" size="1.778" layer="27" rot="R90" display="off"/>
@@ -3377,9 +3413,18 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <attribute name="PARTNO" value="1.00MHCT-ND" x="35.56" y="20.32" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="BOM" value="INCLUDE" x="35.56" y="20.32" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C96" library="rcl" package="C3216" value="15u" x="27.94" y="35.56" rot="R90"/>
-<element name="C97" library="rcl" package="C3216" value="15u" x="30.48" y="35.56" rot="R90"/>
-<element name="C98" library="rcl" package="C0603" value="10u" x="25.4" y="34.925" rot="R90"/>
+<element name="C96" library="rcl" package="C3216" value="15u" x="27.94" y="35.56" smashed="yes" rot="R90">
+<attribute name="NAME" x="26.97" y="34.29" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="26.98" y="36.19" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="C97" library="rcl" package="C3216" value="15u" x="30.48" y="35.56" smashed="yes" rot="R90">
+<attribute name="NAME" x="29.51" y="34.29" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="29.52" y="36.19" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="C98" library="rcl" package="C0603" value="10u" x="25.4" y="34.925" smashed="yes" rot="R90">
+<attribute name="NAME" x="24.765" y="34.29" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="24.805" y="36.19" size="0.4064" layer="27" rot="R90"/>
+</element>
 <element name="C99" library="rcl" package="C0603" value=".1u" x="71.12" y="30.48" rot="R270"/>
 <element name="C100" library="rcl" package="C0603" value=".1u" x="68.58" y="30.48" rot="R270"/>
 <element name="C101" library="rcl" package="C0603" value=".1u" x="73.66" y="30.48" rot="R270"/>
@@ -3391,18 +3436,34 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <attribute name="BOM" value="INCLUDE" x="140.97" y="2.54" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="J$7" library="Other" package="MICRO_B" value="MICROUSB" x="0" y="33.02" rot="R270"/>
-<element name="RN1" library="DiscreteComponents" package="EXBV4V" value="" x="7.2136" y="33.3248" rot="R270">
+<element name="RN1" library="DiscreteComponents" package="EXBV4V" value="" x="7.2136" y="33.3248" smashed="yes" rot="R270">
 <attribute name="MPN" value="MNR12ERAPJ220" x="22.4536" y="42.2148" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="Rohm Semiconductor" x="22.4536" y="42.2148" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DIGIKEY" value="RHM1381CT-ND" x="22.4536" y="42.2148" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="7.0836" y="33.7123" size="0.3048" layer="25" rot="R270"/>
+<attribute name="VALUE" x="4.6736" y="34.9123" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="Q1" library="DiscreteComponents" package="SOT-23" value="FDN340P" x="8.9154" y="36.1442" rot="R270">
+<element name="Q1" library="DiscreteComponents" package="SOT-23" value="FDN340P" x="8.9154" y="36.1442" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="FDN340PCT-ND" x="6.3754" y="36.1442" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="6.8934" y="37.0412" size="0.3048" layer="27" ratio="10" rot="R270"/>
+<attribute name="NAME" x="9.5174" y="36.4412" size="0.3048" layer="25" ratio="10" rot="R270"/>
 </element>
-<element name="D2" library="DiscreteComponents" package="DO-214AC" value="" x="12.4714" y="36.0934" rot="R270"/>
-<element name="U2" library="PowerComponents" package="SOT223" value="AP1117_LIN_REG" x="17.653" y="34.9758" rot="R180"/>
-<element name="C1" library="rcl" package="C0603" value="0.22uF" x="14.5034" y="40.1066" rot="R180"/>
-<element name="C25" library="rcl" package="C0603" value="0.22uF" x="18.669" y="40.1574"/>
+<element name="D2" library="DiscreteComponents" package="DO-214AC" value="" x="12.4714" y="36.0934" smashed="yes" rot="R270">
+<attribute name="NAME" x="12.3764" y="36.1334" size="0.3048" layer="25" rot="R270"/>
+<attribute name="VALUE" x="9.2964" y="38.6334" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="U2" library="PowerComponents" package="SOT223" value="AP1117_LIN_REG" x="17.653" y="34.9758" smashed="yes" rot="R180">
+<attribute name="NAME" x="20.153" y="34.2758" size="0.4064" layer="25" rot="R180"/>
+<attribute name="VALUE" x="20.153" y="36.1758" size="0.4064" layer="27" rot="R180"/>
+</element>
+<element name="C1" library="rcl" package="C0603" value="0.22uF" x="14.5034" y="40.1066" smashed="yes" rot="R180">
+<attribute name="NAME" x="13.5384" y="39.5716" size="0.4064" layer="25" rot="R180"/>
+<attribute name="VALUE" x="16.4384" y="39.5116" size="0.4064" layer="27" rot="R180"/>
+</element>
+<element name="C25" library="rcl" package="C0603" value="0.22uF" x="18.669" y="40.1574" smashed="yes">
+<attribute name="NAME" x="17.134" y="39.1924" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="18.834" y="39.1524" size="0.4064" layer="27"/>
+</element>
 <element name="U$15" library="Connectors" package="MICRO-FIT-4-SMD-HZ" value="MICRO-FIT-4-SMD-HZ" x="20.6756" y="77.1398" rot="R180"/>
 <element name="U$20" library="Connectors" package="MICRO-FIT-4-SMD-HZ" value="MICRO-FIT-4-SMD-HZ" x="78.74" y="7.62" rot="R180"/>
 <element name="U$23" library="Connectors" package="MICRO-FIT-4-SMD-HZ" value="MICRO-FIT-4-SMD-HZ" x="76.2" y="67.31" rot="R180"/>
@@ -3413,7 +3474,10 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <element name="U$28" library="Connectors" package="MICRO-FIT-4-SMD-HZ" value="MICRO-FIT-4-SMD-HZ" x="116.84" y="67.31" rot="R180"/>
 <element name="U$29" library="Connectors" package="MICRO-FIT-4-SMD-HZ" value="MICRO-FIT-4-SMD-HZ" x="57.15" y="36.83" rot="R180"/>
 <element name="U$30" library="Connectors" package="MICRO-FIT-4-SMD-HZ" value="MICRO-FIT-4-SMD-HZ" x="54.61" y="67.31" rot="R180"/>
-<element name="R22" library="rcl" package="R0603" value="120" x="7.8994" y="1.7526" rot="R90"/>
+<element name="R22" library="rcl" package="R0603" value="120" x="7.8994" y="1.7526" smashed="yes" rot="R90">
+<attribute name="NAME" x="8.9644" y="0.5176" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="9.0044" y="2.5176" size="0.4064" layer="27" rot="R90"/>
+</element>
 <element name="R17" library="rcl" package="R0603" value="120" x="8.3566" y="2.4892" rot="MR0"/>
 <element name="U$31" library="Connectors" package="MICRO-FIT-4-SMD-HZ" value="MICRO-FIT-4-SMD-HZ" x="57.15" y="7.62" rot="R180"/>
 <element name="U$12" library="DiscreteComponents" package="SOT-23-BSS138" value="BSS138" x="21.209" y="16.6878" rot="MR180"/>
