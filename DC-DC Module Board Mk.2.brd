@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.015" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
+<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -11643,6 +11643,27 @@ Based on the following sources:
 </package>
 </packages>
 </library>
+<library name="pinhead">
+<description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="1X01">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" shape="octagon"/>
+<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -11652,50 +11673,58 @@ Based on the following sources:
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="GoldPhoenix *">
-<description language="en">
-
-&lt;b&gt;Gold Phoenix PCB Design Rules&lt;/b&gt;
+<designrules name="typical_4pcb">
+<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
-Created by Nick Molo for the Purdue IEEE ROV Team
-</description>
+Die Standard-Design-Rules sind so gewählt, dass sie für 
+die meisten Anwendungen passen. Sollte ihre Platine 
+besondere Anforderungen haben, treffen Sie die erforderlichen
+Einstellungen hier und speichern die Design Rules unter 
+einem neuen Namen ab.</description>
+<description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+&lt;p&gt;
+The default Design Rules have been set to cover
+a wide range of applications. Your particular design
+may have different requirements, so please make the
+necessary adjustments and save your customized
+design rules under a new name.</description>
 <param name="layerSetup" value="(1*16)"/>
-<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
-<param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="7mil"/>
-<param name="mdWirePad" value="7mil"/>
-<param name="mdWireVia" value="7mil"/>
-<param name="mdPadPad" value="7mil"/>
-<param name="mdPadVia" value="7mil"/>
-<param name="mdViaVia" value="7mil"/>
-<param name="mdSmdPad" value="7mil"/>
-<param name="mdSmdVia" value="7mil"/>
-<param name="mdSmdSmd" value="7mil"/>
+<param name="mtCopper" value="0.035559375mm 0.035559375mm 0.035559375mm 0.035559375mm 0.035559375mm 0.035559375mm 0.035559375mm 0.035559375mm 0.035559375mm 0.035559375mm 0.035559375mm 0.035559375mm 0.035559375mm 0.035559375mm 0.035559375mm 0.035559375mm"/>
+<param name="mtIsolate" value="1.501140625mm 0.149859375mm 0.200659375mm 0.149859375mm 0.200659375mm 0.149859375mm 0.200659375mm 0.149859375mm 0.200659375mm 0.149859375mm 0.200659375mm 0.149859375mm 0.200659375mm 0.149859375mm 0.200659375mm"/>
+<param name="mdWireWire" value="6mil"/>
+<param name="mdWirePad" value="6mil"/>
+<param name="mdWireVia" value="6mil"/>
+<param name="mdPadPad" value="6mil"/>
+<param name="mdPadVia" value="6mil"/>
+<param name="mdViaVia" value="6mil"/>
+<param name="mdSmdPad" value="6mil"/>
+<param name="mdSmdVia" value="6mil"/>
+<param name="mdSmdSmd" value="6mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="10mil"/>
+<param name="mdCopperDimension" value="15mil"/>
 <param name="mdDrill" value="8mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="7mil"/>
-<param name="msDrill" value="10mil"/>
-<param name="msMicroVia" value="9.99mm"/>
+<param name="msWidth" value="10mil"/>
+<param name="msDrill" value="15mil"/>
+<param name="msMicroVia" value="9.98981875mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
-<param name="rvPadTop" value="0"/>
-<param name="rvPadInner" value="0"/>
-<param name="rvPadBottom" value="0"/>
+<param name="rvPadTop" value="0.25"/>
+<param name="rvPadInner" value="0.25"/>
+<param name="rvPadBottom" value="0.25"/>
 <param name="rvViaOuter" value="0.25"/>
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="9mil"/>
+<param name="rlMinPadTop" value="10mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
-<param name="rlMinPadInner" value="9mil"/>
+<param name="rlMinPadInner" value="10mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="9mil"/>
+<param name="rlMinPadBottom" value="10mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="10mil"/>
+<param name="rlMinViaOuter" value="8mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="10mil"/>
+<param name="rlMinViaInner" value="8mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
 <param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
@@ -11712,7 +11741,7 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <param name="mlMaxStopFrame" value="4mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="25mil"/>
+<param name="mlViaStopLimit" value="0mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -12432,6 +12461,32 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <attribute name="NAME" x="17.8848" y="18.88" size="0.4064" layer="26" rot="MR270"/>
 <attribute name="VALUE" x="20.6248" y="17.78" size="1.27" layer="28" rot="MR270"/>
 </element>
+<element name="PWM_OUT_3V3" library="pinhead" package="1X01" value="" x="22.77" y="14.16" smashed="yes">
+<attribute name="NAME" x="24.3888" y="16.2112" size="0.6096" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="21.5" y="10.985" size="1.27" layer="27"/>
+</element>
+<element name="PWM_OUT" library="pinhead" package="1X01" value="" x="29.145" y="48.405"/>
+<element name="SDA_3V3" library="pinhead" package="1X01" value="" x="16.98" y="27.93" smashed="yes">
+<attribute name="NAME" x="15.3462" y="23.8388" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="15.71" y="24.755" size="1.27" layer="27"/>
+</element>
+<element name="SCL_3V3" library="pinhead" package="1X01" value="" x="21.045" y="20.235" smashed="yes">
+<attribute name="NAME" x="24.9112" y="18.8412" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="19.775" y="17.06" size="1.27" layer="27"/>
+</element>
+<element name="SDA" library="pinhead" package="1X01" value="" x="62.685" y="20.415"/>
+<element name="SCL" library="pinhead" package="1X01" value="" x="63.495" y="13.38" smashed="yes">
+<attribute name="NAME" x="60.6488" y="15.0888" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="62.225" y="10.205" size="1.27" layer="27"/>
+</element>
+<element name="CAN_TX" library="pinhead" package="1X01" value="" x="3.855" y="10.275" smashed="yes">
+<attribute name="NAME" x="2.0712" y="6.9488" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="2.585" y="7.1" size="1.27" layer="27"/>
+</element>
+<element name="CAN_RX" library="pinhead" package="1X01" value="" x="4.38" y="15.765" smashed="yes">
+<attribute name="NAME" x="2.2512" y="14.8988" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="3.11" y="12.59" size="1.27" layer="27"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -12905,10 +12960,12 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <wire x1="129.883" y1="63.594" x2="129.883" y2="61.068" width="0.4064" layer="1"/>
 <wire x1="129.883" y1="61.068" x2="129.83" y2="61.015" width="0.4064" layer="1"/>
 <wire x1="64.4652" y1="9.0932" x2="64.4652" y2="9.2108" width="0.4064" layer="1"/>
-<wire x1="64.4652" y1="9.2108" x2="58.009" y2="15.667" width="0.4064" layer="1"/>
-<via x="58.009" y="15.667" extent="1-16" drill="0.6"/>
-<wire x1="58.009" y1="15.667" x2="57.8914" y2="15.667" width="0.4064" layer="1"/>
-<wire x1="57.8914" y1="15.667" x2="55.4228" y2="18.1356" width="0.4064" layer="1"/>
+<contactref element="SCL" pad="1"/>
+<wire x1="55.4228" y1="18.1356" x2="64.4652" y2="9.0932" width="0.4064" layer="1"/>
+<wire x1="63.495" y1="13.38" x2="65.37" y2="11.505" width="0.4064" layer="1"/>
+<wire x1="65.37" y1="11.505" x2="65.37" y2="9.855" width="0.4064" layer="1"/>
+<wire x1="65.37" y1="9.855" x2="64.6082" y2="9.0932" width="0.4064" layer="1"/>
+<wire x1="64.6082" y1="9.0932" x2="64.4652" y2="9.0932" width="0.4064" layer="1"/>
 </signal>
 <signal name="SDA">
 <contactref element="U$15" pad="C2"/>
@@ -13062,11 +13119,12 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <wire x1="32.5628" y1="29.845" x2="33.5788" y2="28.829" width="0.3048" layer="1"/>
 <wire x1="163.83" y1="10.16" x2="167.64" y2="10.16" width="0.3048" layer="16"/>
 <wire x1="169.08" y1="8.72" x2="167.64" y2="10.16" width="0.4064" layer="1"/>
-<wire x1="61.361" y1="19.05" x2="64.481" y2="15.93" width="0.3048" layer="1"/>
-<via x="64.481" y="15.93" extent="1-16" drill="0.6"/>
+<wire x1="61.361" y1="19.05" x2="67.277" y2="13.134" width="0.3048" layer="1"/>
 <wire x1="67.31" y1="9.525" x2="67.277" y2="9.525" width="0.3048" layer="1"/>
 <wire x1="67.277" y1="9.525" x2="67.277" y2="13.134" width="0.3048" layer="1"/>
-<wire x1="67.277" y1="13.134" x2="64.481" y2="15.93" width="0.3048" layer="1"/>
+<contactref element="SDA" pad="1"/>
+<wire x1="62.685" y1="20.415" x2="61.361" y2="19.091" width="0.3048" layer="1"/>
+<wire x1="61.361" y1="19.091" x2="61.361" y2="19.05" width="0.3048" layer="1"/>
 </signal>
 <signal name="ALERT">
 <contactref element="U$1" pad="14"/>
@@ -13906,6 +13964,9 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <via x="2.7686" y="4.2926" extent="1-16" drill="0.6"/>
 <wire x1="2.7686" y1="4.2926" x2="3.6264" y2="3.4348" width="0.3048" layer="1"/>
 <wire x1="3.6264" y1="3.4348" x2="3.6264" y2="3.1848" width="0.3048" layer="1"/>
+<contactref element="CAN_TX" pad="1"/>
+<wire x1="3.855" y1="10.275" x2="3.3274" y2="10.8026" width="0.3048" layer="1"/>
+<wire x1="3.3274" y1="10.8026" x2="3.3274" y2="12.3952" width="0.3048" layer="1"/>
 </signal>
 <signal name="RXD">
 <contactref element="U$8" pad="4"/>
@@ -13920,6 +13981,9 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <wire x1="1.7018" y1="12.446" x2="3.2512" y2="13.9954" width="0.3048" layer="16"/>
 <wire x1="6.0864" y1="14.0624" x2="3.3182" y2="14.0624" width="0.3048" layer="1"/>
 <wire x1="3.3182" y1="14.0624" x2="3.2512" y2="13.9954" width="0.3048" layer="1"/>
+<contactref element="CAN_RX" pad="1"/>
+<wire x1="4.38" y1="15.765" x2="3.2512" y2="14.6362" width="0.3048" layer="16"/>
+<wire x1="3.2512" y1="14.6362" x2="3.2512" y2="13.9954" width="0.3048" layer="16"/>
 </signal>
 <signal name="SDA1">
 <contactref element="U$9" pad="3"/>
@@ -13948,6 +14012,9 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <wire x1="13.0864" y1="5.481" x2="12.954" y2="5.6134" width="0.3048" layer="1"/>
 <wire x1="12.954" y1="5.6134" x2="12.3952" y2="5.6134" width="0.3048" layer="1"/>
 <wire x1="12.3952" y1="5.6134" x2="11.176" y2="6.8326" width="0.3048" layer="1"/>
+<contactref element="SDA_3V3" pad="1"/>
+<wire x1="16.98" y1="27.93" x2="17.7038" y2="27.2062" width="0.254" layer="16"/>
+<wire x1="17.7038" y1="27.2062" x2="17.7038" y2="26.0858" width="0.254" layer="16"/>
 </signal>
 <signal name="SCL1">
 <contactref element="BSS138" pad="3"/>
@@ -13972,6 +14039,9 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <wire x1="14.0864" y1="5.5478" x2="13.9192" y2="5.715" width="0.3048" layer="1"/>
 <wire x1="13.9192" y1="5.715" x2="13.589" y2="5.715" width="0.3048" layer="1"/>
 <wire x1="13.589" y1="5.715" x2="12.7508" y2="6.5532" width="0.3048" layer="1"/>
+<contactref element="SCL_3V3" pad="1"/>
+<wire x1="21.045" y1="20.235" x2="20.024" y2="20.235" width="0.3048" layer="1"/>
+<wire x1="20.024" y1="20.235" x2="19.0754" y2="21.1836" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$63">
 <contactref element="U$8" pad="8"/>
@@ -14505,7 +14575,6 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <wire x1="22.098" y1="17.8488" x2="22.159" y2="17.7878" width="0.3048" layer="16"/>
 <wire x1="22.159" y1="17.7878" x2="23.4402" y2="17.7878" width="0.3048" layer="16"/>
 <wire x1="23.4402" y1="17.7878" x2="23.6728" y2="17.8952" width="0.3048" layer="16"/>
-<wire x1="26.8986" y1="50.3428" x2="27.2034" y2="50.3428" width="0.3048" layer="16"/>
 <via x="27.2034" y="50.3428" extent="1-16" drill="0.508"/>
 <wire x1="27.2034" y1="50.3428" x2="40.0812" y2="50.3428" width="0.3048" layer="1"/>
 <wire x1="40.0812" y1="50.3428" x2="48.9966" y2="59.2582" width="0.3048" layer="1"/>
@@ -14515,6 +14584,11 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <wire x1="23.6728" y1="18.0204" x2="26.67" y2="21.0176" width="0.3048" layer="16"/>
 <wire x1="26.67" y1="21.0176" x2="26.67" y2="49.8094" width="0.3048" layer="16"/>
 <wire x1="26.67" y1="49.8094" x2="27.2034" y2="50.3428" width="0.3048" layer="16"/>
+<contactref element="PWM_OUT" pad="1"/>
+<wire x1="27.2034" y1="50.3428" x2="26.685" y2="49.8244" width="0.3048" layer="1"/>
+<wire x1="26.685" y1="49.8244" x2="26.685" y2="49.305" width="0.3048" layer="1"/>
+<wire x1="26.685" y1="49.305" x2="27.585" y2="48.405" width="0.3048" layer="1"/>
+<wire x1="27.585" y1="48.405" x2="29.145" y2="48.405" width="0.3048" layer="1"/>
 </signal>
 <signal name="PWM_IN">
 <contactref element="U$12" pad="3"/>
@@ -14533,6 +14607,13 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <wire x1="12.827" y1="20.2946" x2="17.6022" y2="20.2946" width="0.3048" layer="16"/>
 <wire x1="17.6022" y1="20.2946" x2="18.7198" y2="19.177" width="0.3048" layer="16"/>
 <wire x1="18.7198" y1="19.177" x2="18.7198" y2="17.995" width="0.3048" layer="16"/>
+<contactref element="PWM_OUT_3V3" pad="1"/>
+<wire x1="22.77" y1="14.16" x2="18.87" y2="14.16" width="0.3048" layer="16"/>
+<wire x1="18.87" y1="14.16" x2="16.455" y2="16.575" width="0.3048" layer="16"/>
+<wire x1="16.455" y1="16.575" x2="16.455" y2="17.34" width="0.3048" layer="16"/>
+<wire x1="16.455" y1="17.34" x2="17.25" y2="18.135" width="0.3048" layer="16"/>
+<wire x1="17.25" y1="18.135" x2="18.5798" y2="18.135" width="0.3048" layer="16"/>
+<wire x1="18.5798" y1="18.135" x2="18.7198" y2="17.995" width="0.3048" layer="16"/>
 </signal>
 <signal name="PC6">
 <contactref element="U$5" pad="37"/>
