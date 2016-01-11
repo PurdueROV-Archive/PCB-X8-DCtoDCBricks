@@ -26071,7 +26071,7 @@ Based on the following sources:
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="typical_4pcb">
+<designrules name="typical_4pcb *">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -26107,9 +26107,9 @@ design rules under a new name.</description>
 <param name="msDrill" value="15mil"/>
 <param name="msMicroVia" value="9.98981875mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
-<param name="rvPadTop" value="0.25"/>
-<param name="rvPadInner" value="0.25"/>
-<param name="rvPadBottom" value="0.25"/>
+<param name="rvPadTop" value="0"/>
+<param name="rvPadInner" value="0"/>
+<param name="rvPadBottom" value="0"/>
 <param name="rvViaOuter" value="0.25"/>
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
@@ -28324,18 +28324,12 @@ design rules under a new name.</description>
 <contactref element="U$31" pad="C3"/>
 <wire x1="6.0764" y1="1.8848" x2="6.9172" y2="1.8848" width="0.3048" layer="1"/>
 <wire x1="6.9172" y1="1.8848" x2="7.8994" y2="0.9026" width="0.3048" layer="1"/>
-<wire x1="7.8994" y1="0.9026" x2="17.8934" y2="0.9026" width="0.3048" layer="1"/>
-<wire x1="41.7068" y1="3.7846" x2="47.498" y2="3.7846" width="0.3048" layer="1"/>
-<wire x1="19.583315625" y1="-0.737890625" x2="34.7472" y2="-0.762" width="0.3048" layer="1"/>
-<wire x1="17.8934" y1="0.9026" x2="18.7198" y2="0.0762" width="0.3048" layer="1" curve="-90"/>
-<wire x1="18.7198" y1="0.0762" x2="19.533890625" y2="-0.737890625" width="0.3048" layer="1" curve="90"/>
-<wire x1="19.533890625" y1="-0.737890625" x2="19.583315625" y2="-0.737890625" width="0.3048" layer="1"/>
-<wire x1="34.7472" y1="-0.762" x2="37.1602" y2="-0.762" width="0.3048" layer="1"/>
-<wire x1="37.1602" y1="-0.762" x2="39.5986" y2="1.6764" width="0.3048" layer="1" curve="90"/>
-<wire x1="39.5986" y1="1.6764" x2="41.7068" y2="3.7846" width="0.3048" layer="1" curve="-90"/>
-<wire x1="47.498" y1="3.7846" x2="48.6156" y2="2.667" width="0.3048" layer="1" curve="-90"/>
+<wire x1="39.3846" y1="3.7846" x2="47.498" y2="3.7846" width="0.3048" layer="1"/>
 <wire x1="48.6156" y1="2.667" x2="48.6156" y2="1.3906" width="0.3048" layer="1"/>
 <wire x1="48.6156" y1="1.3906" x2="48.55" y2="1.325" width="0.3048" layer="1" curve="-90"/>
+<wire x1="48.6156" y1="2.667" x2="47.498" y2="3.7846" width="0.3048" layer="1"/>
+<wire x1="39.3846" y1="3.7846" x2="36.5026" y2="0.9026" width="0.3048" layer="1"/>
+<wire x1="36.5026" y1="0.9026" x2="7.8994" y2="0.9026" width="0.3048" layer="1"/>
 </signal>
 <signal name="CANH">
 <contactref element="U$8" pad="7"/>
