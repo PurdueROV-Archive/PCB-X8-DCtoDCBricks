@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -15327,38 +15327,6 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LED-WHITE" prefix="D" uservalue="yes">
-<description>White SMD LEDs&lt;br&gt;
-LilyPad 1206- DIO-09955</description>
-<gates>
-<gate name="G$1" symbol="LED" x="0" y="0"/>
-</gates>
-<devices>
-<device name="1206" package="LED-1206">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="DIO-09955" constant="no"/>
-<attribute name="VALUE" value="WHITE" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="0603" package="LED-0603">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="DIO-09004"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 <library name="MAX3051 Library">
@@ -15885,9 +15853,7 @@ General-purpose diode for high-speed switching</description>
 <part name="U$17" library="Connectors" deviceset="XT60" device=""/>
 <part name="U$18" library="Connectors" deviceset="XT60" device=""/>
 <part name="U$19" library="Connectors" deviceset="XT60" device=""/>
-<part name="D8" library="SparkFun-LED" deviceset="LED-WHITE" device="1206" value="WHITE"/>
 <part name="R24" library="resistor" deviceset="R-US_" device="R0603" value="330"/>
-<part name="SUPPLY18" library="supply1" deviceset="GND" device=""/>
 <part name="U3" library="NSC_By_element14_Batch_1" deviceset="LM1085IS-5.0" device=""/>
 <part name="5V_GND" library="supply2" deviceset="GND" device=""/>
 <part name="D10" library="diode" deviceset="BAS40" device=""/>
@@ -15896,7 +15862,6 @@ General-purpose diode for high-speed switching</description>
 <part name="P+8" library="supply1" deviceset="+5V" device=""/>
 <part name="P+9" library="supply1" deviceset="+12V" device=""/>
 <part name="R21" library="resistor" deviceset="R-US_" device="R0603" value="200"/>
-<part name="D1" library="SparkFun-LED" deviceset="LED-WHITE" device="1206" value="WHITE"/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="U$21" library="Connectors" deviceset="XT60" device=""/>
 <part name="GND62" library="supply1" deviceset="GND" device=""/>
@@ -16117,6 +16082,9 @@ General-purpose diode for high-speed switching</description>
 <part name="SCL" library="pinhead" deviceset="PINHD-1X1" device=""/>
 <part name="CAN_TX" library="pinhead" deviceset="PINHD-1X1" device=""/>
 <part name="CAN_RX" library="pinhead" deviceset="PINHD-1X1" device=""/>
+<part name="D7" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED"/>
+<part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="D1" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED"/>
 </parts>
 <sheets>
 <sheet>
@@ -16306,9 +16274,7 @@ General-purpose diode for high-speed switching</description>
 <instance part="U$17" gate="G$1" x="381" y="106.68" rot="R180"/>
 <instance part="U$18" gate="G$1" x="381" y="88.9" rot="R180"/>
 <instance part="U$19" gate="G$1" x="381" y="71.12" rot="R180"/>
-<instance part="D8" gate="G$1" x="408.94" y="-182.88"/>
 <instance part="R24" gate="G$1" x="408.94" y="-172.72" rot="MR90"/>
-<instance part="SUPPLY18" gate="1" x="408.94" y="-191.77"/>
 <instance part="U3" gate="A" x="368.3" y="-160.02"/>
 <instance part="5V_GND" gate="GND" x="347.98" y="-170.18"/>
 <instance part="D10" gate="1" x="370.84" y="-147.32" rot="MR0"/>
@@ -16317,7 +16283,6 @@ General-purpose diode for high-speed switching</description>
 <instance part="P+8" gate="1" x="408.94" y="-147.32"/>
 <instance part="P+9" gate="1" x="337.82" y="-149.86"/>
 <instance part="R21" gate="G$1" x="109.22" y="-137.16" rot="MR0"/>
-<instance part="D1" gate="G$1" x="114.3" y="-144.78"/>
 <instance part="GND7" gate="1" x="114.3" y="-154.94" smashed="yes">
 <attribute name="VALUE" x="111.76" y="-157.48" size="1.778" layer="96"/>
 </instance>
@@ -16429,6 +16394,11 @@ General-purpose diode for high-speed switching</description>
 <instance part="SCL" gate="G$1" x="213.36" y="-177.8"/>
 <instance part="CAN_TX" gate="G$1" x="464.82" y="-88.9" rot="R180"/>
 <instance part="CAN_RX" gate="G$1" x="464.82" y="-106.68" rot="R180"/>
+<instance part="D7" gate="G$1" x="408.94" y="-182.88"/>
+<instance part="GND9" gate="1" x="408.94" y="-195.58" smashed="yes">
+<attribute name="VALUE" x="406.4" y="-198.12" size="1.778" layer="96"/>
+</instance>
+<instance part="D1" gate="G$1" x="114.3" y="-144.78"/>
 </instances>
 <busses>
 </busses>
@@ -16578,11 +16548,6 @@ General-purpose diode for high-speed switching</description>
 <label x="396.24" y="73.66" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="D8" gate="G$1" pin="C"/>
-<pinref part="SUPPLY18" gate="1" pin="GND"/>
-<wire x1="408.94" y1="-187.96" x2="408.94" y2="-189.23" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="U3" gate="A" pin="ADJ/GND"/>
 <pinref part="5V_GND" gate="GND" pin="GND"/>
 <wire x1="347.98" y1="-167.64" x2="347.98" y2="-165.1" width="0.1524" layer="91"/>
@@ -16593,9 +16558,9 @@ General-purpose diode for high-speed switching</description>
 <wire x1="403.86" y1="-170.18" x2="403.86" y2="-167.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="D1" gate="G$1" pin="C"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="114.3" y1="-149.86" x2="114.3" y2="-152.4" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="C"/>
 </segment>
 <segment>
 <pinref part="U$21" gate="G$1" pin="GND"/>
@@ -16703,6 +16668,11 @@ General-purpose diode for high-speed switching</description>
 <pinref part="U$29" gate="G$1" pin="P1"/>
 <wire x1="436.88" y1="180.34" x2="441.96" y2="180.34" width="0.1524" layer="91"/>
 <label x="441.96" y="180.34" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="D7" gate="G$1" pin="C"/>
+<wire x1="408.94" y1="-187.96" x2="408.94" y2="-193.04" width="0.1524" layer="91"/>
+<pinref part="GND9" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -17759,9 +17729,9 @@ General-purpose diode for high-speed switching</description>
 <wire x1="162.56" y1="-167.64" x2="170.18" y2="-167.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$5" gate="G$2" pin="PB7"/>
-<wire x1="45.72" y1="-35.56" x2="40.64" y2="-35.56" width="0.1524" layer="91"/>
-<label x="38.1" y="-35.56" size="1.778" layer="95"/>
+<pinref part="U$5" gate="G$2" pin="PB11"/>
+<wire x1="45.72" y1="-45.72" x2="40.64" y2="-45.72" width="0.1524" layer="91"/>
+<label x="38.1" y="-45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCL1" class="0">
@@ -17780,9 +17750,9 @@ General-purpose diode for high-speed switching</description>
 <wire x1="165.1" y1="-177.8" x2="170.18" y2="-177.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$5" gate="G$2" pin="PB8"/>
-<wire x1="45.72" y1="-38.1" x2="40.64" y2="-38.1" width="0.1524" layer="91"/>
-<label x="38.1" y="-38.1" size="1.778" layer="95"/>
+<pinref part="U$5" gate="G$2" pin="PB10"/>
+<wire x1="45.72" y1="-43.18" x2="40.64" y2="-43.18" width="0.1524" layer="91"/>
+<label x="38.1" y="-43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$63" class="0">
@@ -17890,9 +17860,9 @@ General-purpose diode for high-speed switching</description>
 </net>
 <net name="N$22" class="0">
 <segment>
-<pinref part="D8" gate="G$1" pin="A"/>
 <pinref part="R24" gate="G$1" pin="1"/>
 <wire x1="408.94" y1="-177.8" x2="408.94" y2="-180.34" width="0.1524" layer="91"/>
+<pinref part="D7" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="5V_VOUT" class="0">
@@ -17901,13 +17871,6 @@ General-purpose diode for high-speed switching</description>
 <wire x1="388.62" y1="-162.56" x2="391.16" y2="-162.56" width="0.1524" layer="91"/>
 <wire x1="391.16" y1="-162.56" x2="391.16" y2="-167.64" width="0.1524" layer="91"/>
 <label x="388.62" y="-170.18" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="R21" gate="G$1" pin="1"/>
-<pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="114.3" y1="-137.16" x2="114.3" y2="-142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+12V2" class="0">
@@ -18160,18 +18123,25 @@ General-purpose diode for high-speed switching</description>
 <label x="38.1" y="-33.02" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PB10" class="0">
+<net name="PB7" class="0">
 <segment>
-<pinref part="U$5" gate="G$2" pin="PB10"/>
-<wire x1="45.72" y1="-43.18" x2="40.64" y2="-43.18" width="0.1524" layer="91"/>
-<label x="38.1" y="-43.18" size="1.778" layer="95"/>
+<pinref part="U$5" gate="G$2" pin="PB7"/>
+<wire x1="45.72" y1="-35.56" x2="40.64" y2="-35.56" width="0.1524" layer="91"/>
+<label x="38.1" y="-35.56" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PB11" class="0">
+<net name="PB8" class="0">
 <segment>
-<pinref part="U$5" gate="G$2" pin="PB11"/>
-<wire x1="45.72" y1="-45.72" x2="40.64" y2="-45.72" width="0.1524" layer="91"/>
-<label x="38.1" y="-45.72" size="1.778" layer="95"/>
+<pinref part="U$5" gate="G$2" pin="PB8"/>
+<wire x1="45.72" y1="-38.1" x2="40.64" y2="-38.1" width="0.1524" layer="91"/>
+<label x="38.1" y="-38.1" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="R21" gate="G$1" pin="1"/>
+<pinref part="D1" gate="G$1" pin="A"/>
+<wire x1="114.3" y1="-137.16" x2="114.3" y2="-142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
