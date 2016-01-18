@@ -16085,6 +16085,7 @@ General-purpose diode for high-speed switching</description>
 <part name="D7" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED"/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="D1" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED"/>
+<part name="C13" library="rcl" deviceset="C-US" device="C0603" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -16108,10 +16109,10 @@ General-purpose diode for high-speed switching</description>
 <text x="71.12" y="-76.2" size="1.778" layer="95">Between VDDA and VSSA</text>
 <text x="40.64" y="-76.2" size="1.778" layer="95">One for each VDD</text>
 <text x="10.16" y="-73.66" size="1.778" layer="95">Conect to any one VDD</text>
-<wire x1="459.74" y1="-68.58" x2="533.4" y2="-68.58" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="441.96" y1="-68.58" x2="533.4" y2="-68.58" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="533.4" y1="-68.58" x2="533.4" y2="-127" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="533.4" y1="-127" x2="459.74" y2="-127" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="459.74" y1="-127" x2="459.74" y2="-68.58" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="533.4" y1="-127" x2="441.96" y2="-127" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="441.96" y1="-127" x2="441.96" y2="-68.58" width="0.1524" layer="97" style="shortdash"/>
 <text x="487.68" y="-66.04" size="1.778" layer="97">Yes we CAN!</text>
 <wire x1="218.44" y1="-165.1" x2="147.32" y2="-165.1" width="0.1524" layer="95" style="shortdash"/>
 <wire x1="147.32" y1="-165.1" x2="147.32" y2="-121.92" width="0.1524" layer="95" style="shortdash"/>
@@ -16399,6 +16400,7 @@ General-purpose diode for high-speed switching</description>
 <attribute name="VALUE" x="406.4" y="-198.12" size="1.778" layer="96"/>
 </instance>
 <instance part="D1" gate="G$1" x="114.3" y="-144.78"/>
+<instance part="C13" gate="G$1" x="449.58" y="-96.52"/>
 </instances>
 <busses>
 </busses>
@@ -17078,8 +17080,13 @@ General-purpose diode for high-speed switching</description>
 <segment>
 <pinref part="U$8" gate="G$1" pin="GND"/>
 <wire x1="482.6" y1="-106.68" x2="480.06" y2="-106.68" width="0.1524" layer="91"/>
-<wire x1="480.06" y1="-106.68" x2="480.06" y2="-119.38" width="0.1524" layer="91"/>
+<wire x1="480.06" y1="-106.68" x2="480.06" y2="-114.3" width="0.1524" layer="91"/>
 <label x="480.06" y="-116.84" size="1.778" layer="95"/>
+<pinref part="C13" gate="G$1" pin="2"/>
+<wire x1="480.06" y1="-114.3" x2="480.06" y2="-119.38" width="0.1524" layer="91"/>
+<wire x1="480.06" y1="-114.3" x2="449.58" y2="-114.3" width="0.1524" layer="91"/>
+<wire x1="449.58" y1="-114.3" x2="449.58" y2="-101.6" width="0.1524" layer="91"/>
+<junction x="480.06" y="-114.3"/>
 </segment>
 <segment>
 <wire x1="520.7" y1="-106.68" x2="523.24" y2="-106.68" width="0.1524" layer="91"/>
@@ -17250,7 +17257,12 @@ General-purpose diode for high-speed switching</description>
 <pinref part="U$8" gate="G$1" pin="VCC"/>
 <wire x1="482.6" y1="-91.44" x2="480.06" y2="-91.44" width="0.1524" layer="91"/>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
-<wire x1="480.06" y1="-76.2" x2="480.06" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="480.06" y1="-76.2" x2="480.06" y2="-81.28" width="0.1524" layer="91"/>
+<pinref part="C13" gate="G$1" pin="1"/>
+<wire x1="480.06" y1="-81.28" x2="480.06" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="480.06" y1="-81.28" x2="449.58" y2="-81.28" width="0.1524" layer="91"/>
+<wire x1="449.58" y1="-81.28" x2="449.58" y2="-93.98" width="0.1524" layer="91"/>
+<junction x="480.06" y="-81.28"/>
 </segment>
 <segment>
 <pinref part="C25" gate="G$1" pin="1"/>
