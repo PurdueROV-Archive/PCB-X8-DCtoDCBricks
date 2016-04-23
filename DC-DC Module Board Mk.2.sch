@@ -25794,6 +25794,7 @@ diameter 5 mm, grid 2.54 mm</description>
 <text x="-254" y="-63.5" size="1.778" layer="97">1 + A5 + A4 + A3 + A2 + A1 +A1 + RW</text>
 <text x="-236.22" y="-60.96" size="1.778" layer="97">I2C Address =</text>
 <text x="-243.84" y="-68.58" size="1.778" layer="97">Open = 0 / Closed = 1</text>
+<text x="243.84" y="-38.1" size="1.778" layer="91">is this correct?</text>
 </plain>
 <instances>
 <instance part="GND3" gate="1" x="205.74" y="134.62"/>
@@ -26552,11 +26553,6 @@ diameter 5 mm, grid 2.54 mm</description>
 <pinref part="R33" gate="G$1" pin="2"/>
 <pinref part="U$104" gate="G$1" pin="GND"/>
 </segment>
-<segment>
-<pinref part="U$4" gate="G$1" pin="GND"/>
-<wire x1="246.38" y1="-35.56" x2="251.46" y2="-35.56" width="0.1524" layer="91"/>
-<label x="246.38" y="-35.56" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="N$7" class="0">
 <segment>
@@ -26667,46 +26663,6 @@ diameter 5 mm, grid 2.54 mm</description>
 </net>
 <net name="SCL" class="0">
 <segment>
-<pinref part="U$15" gate="G$1" pin="P3"/>
-<wire x1="322.58" y1="195.58" x2="327.66" y2="195.58" width="0.1524" layer="91"/>
-<label x="327.66" y="195.58" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$20" gate="G$1" pin="P3"/>
-<wire x1="322.58" y1="175.26" x2="327.66" y2="175.26" width="0.1524" layer="91"/>
-<label x="327.66" y="175.26" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$23" gate="G$1" pin="P3"/>
-<wire x1="322.58" y1="154.94" x2="327.66" y2="154.94" width="0.1524" layer="91"/>
-<label x="327.66" y="154.94" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$24" gate="G$1" pin="P3"/>
-<wire x1="322.58" y1="134.62" x2="327.66" y2="134.62" width="0.1524" layer="91"/>
-<label x="327.66" y="134.62" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$25" gate="G$1" pin="P3"/>
-<wire x1="322.58" y1="114.3" x2="327.66" y2="114.3" width="0.1524" layer="91"/>
-<label x="327.66" y="114.3" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$26" gate="G$1" pin="P3"/>
-<wire x1="322.58" y1="93.98" x2="327.66" y2="93.98" width="0.1524" layer="91"/>
-<label x="327.66" y="93.98" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$27" gate="G$1" pin="P3"/>
-<wire x1="322.58" y1="73.66" x2="327.66" y2="73.66" width="0.1524" layer="91"/>
-<label x="327.66" y="73.66" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$28" gate="G$1" pin="P3"/>
-<wire x1="322.58" y1="53.34" x2="327.66" y2="53.34" width="0.1524" layer="91"/>
-<label x="327.66" y="53.34" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U$22" gate="G$1" pin="SCL"/>
 <wire x1="144.78" y1="63.5" x2="152.4" y2="63.5" width="0.1524" layer="91"/>
 <label x="152.4" y="63.5" size="1.27" layer="95" xref="yes"/>
@@ -26731,48 +26687,13 @@ diameter 5 mm, grid 2.54 mm</description>
 <pinref part="JP7" gate="A" pin="4"/>
 <pinref part="JP8" gate="A" pin="4"/>
 </segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="19/A5/T/SCL0"/>
+<wire x1="200.66" y1="-76.2" x2="195.58" y2="-76.2" width="0.1524" layer="91"/>
+<label x="195.58" y="-76.2" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SDA" class="0">
-<segment>
-<pinref part="U$15" gate="G$1" pin="P2"/>
-<wire x1="322.58" y1="190.5" x2="327.66" y2="190.5" width="0.1524" layer="91"/>
-<label x="327.66" y="190.5" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$20" gate="G$1" pin="P2"/>
-<wire x1="322.58" y1="170.18" x2="327.66" y2="170.18" width="0.1524" layer="91"/>
-<label x="327.66" y="170.18" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$23" gate="G$1" pin="P2"/>
-<wire x1="322.58" y1="149.86" x2="327.66" y2="149.86" width="0.1524" layer="91"/>
-<label x="327.66" y="149.86" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$24" gate="G$1" pin="P2"/>
-<wire x1="322.58" y1="129.54" x2="327.66" y2="129.54" width="0.1524" layer="91"/>
-<label x="327.66" y="129.54" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$25" gate="G$1" pin="P2"/>
-<wire x1="322.58" y1="109.22" x2="327.66" y2="109.22" width="0.1524" layer="91"/>
-<label x="327.66" y="109.22" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$26" gate="G$1" pin="P2"/>
-<wire x1="322.58" y1="88.9" x2="327.66" y2="88.9" width="0.1524" layer="91"/>
-<label x="327.66" y="88.9" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$27" gate="G$1" pin="P2"/>
-<wire x1="322.58" y1="68.58" x2="327.66" y2="68.58" width="0.1524" layer="91"/>
-<label x="327.66" y="68.58" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$28" gate="G$1" pin="P2"/>
-<wire x1="322.58" y1="48.26" x2="327.66" y2="48.26" width="0.1524" layer="91"/>
-<label x="327.66" y="48.26" size="1.27" layer="95" xref="yes"/>
-</segment>
 <segment>
 <pinref part="U$22" gate="G$1" pin="SDA"/>
 <wire x1="144.78" y1="58.42" x2="152.4" y2="58.42" width="0.1524" layer="91"/>
@@ -26797,6 +26718,11 @@ diameter 5 mm, grid 2.54 mm</description>
 <pinref part="R34" gate="G$1" pin="1"/>
 <pinref part="JP7" gate="A" pin="3"/>
 <pinref part="JP8" gate="A" pin="3"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="18/A4/T/SDA0"/>
+<wire x1="200.66" y1="-73.66" x2="195.58" y2="-73.66" width="0.1524" layer="91"/>
+<label x="195.58" y="-73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ALERT" class="0">
@@ -26910,6 +26836,11 @@ diameter 5 mm, grid 2.54 mm</description>
 <pinref part="U$30" gate="G$1" pin="P3"/>
 <wire x1="436.88" y1="162.56" x2="441.96" y2="162.56" width="0.1524" layer="91"/>
 <label x="441.96" y="162.56" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="GND"/>
+<wire x1="246.38" y1="-35.56" x2="251.46" y2="-35.56" width="0.1524" layer="91"/>
+<label x="246.38" y="-35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -27066,6 +26997,11 @@ diameter 5 mm, grid 2.54 mm</description>
 <pinref part="CAN_TX" gate="G$1" pin="1"/>
 <wire x1="474.98" y1="-88.9" x2="467.36" y2="-88.9" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="3/CAN-TX/PWM"/>
+<wire x1="200.66" y1="-35.56" x2="195.58" y2="-35.56" width="0.1524" layer="91"/>
+<label x="195.58" y="-35.56" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="RXD" class="0">
 <segment>
@@ -27077,6 +27013,11 @@ diameter 5 mm, grid 2.54 mm</description>
 <junction x="474.98" y="-101.6"/>
 <pinref part="CAN_RX" gate="G$1" pin="1"/>
 <wire x1="474.98" y1="-106.68" x2="467.36" y2="-106.68" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="4/CAN-RX-PWM"/>
+<wire x1="200.66" y1="-38.1" x2="195.58" y2="-38.1" width="0.1524" layer="91"/>
+<label x="195.58" y="-38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$63" class="0">
@@ -27969,34 +27910,6 @@ diameter 5 mm, grid 2.54 mm</description>
 <wire x1="-40.64" y1="-68.58" x2="-33.02" y2="-68.58" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="1"/>
 <pinref part="JP11" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$48" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="3/CAN-TX/PWM"/>
-<wire x1="200.66" y1="-35.56" x2="195.58" y2="-35.56" width="0.1524" layer="91"/>
-<label x="195.58" y="-35.56" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$49" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="4/CAN-RX-PWM"/>
-<wire x1="200.66" y1="-38.1" x2="195.58" y2="-38.1" width="0.1524" layer="91"/>
-<label x="195.58" y="-38.1" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$50" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="18/A4/T/SDA0"/>
-<wire x1="200.66" y1="-73.66" x2="195.58" y2="-73.66" width="0.1524" layer="91"/>
-<label x="195.58" y="-73.66" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$51" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="19/A5/T/SCL0"/>
-<wire x1="200.66" y1="-76.2" x2="195.58" y2="-76.2" width="0.1524" layer="91"/>
-<label x="195.58" y="-76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
