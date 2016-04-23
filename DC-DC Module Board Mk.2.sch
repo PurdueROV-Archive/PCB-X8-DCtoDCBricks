@@ -12781,58 +12781,6 @@ General-purpose diode for high-speed switching</description>
 </library>
 <library name="microbuilder">
 <packages>
-<package name="FIDUCIAL-1X2.5">
-<circle x="0" y="0" radius="1.1" width="1.2" layer="29"/>
-<circle x="0" y="0" radius="1.1" width="1.2" layer="39"/>
-<circle x="0" y="0" radius="1.1" width="1.2" layer="41"/>
-<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
-<text x="-0.508" y="-1.016" size="0.4064" layer="25">1mm</text>
-</package>
-<package name="PASS-ROUND">
-<description>&lt;b&gt;FIDUCIAL MARKER&lt;/b&gt;&lt;p&gt;
-round, layers 1 + 16 + 21 + 39 + 49</description>
-<wire x1="0" y1="0.508" x2="0.508" y2="0" width="1.4224" layer="49" curve="-90" cap="flat"/>
-<wire x1="-0.508" y1="0" x2="0" y2="-0.508" width="1.4224" layer="49" curve="90" cap="flat"/>
-<wire x1="0" y1="0.508" x2="0.508" y2="0" width="1.4224" layer="49" curve="-90" cap="flat"/>
-<wire x1="-0.508" y1="0" x2="0" y2="-0.508" width="1.4224" layer="49" curve="90" cap="flat"/>
-<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="49"/>
-<wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.1524" layer="49"/>
-<wire x1="0" y1="-2.54" x2="0" y2="-1.27" width="0.1524" layer="49"/>
-<wire x1="2.54" y1="0" x2="1.27" y2="0" width="0.1524" layer="49"/>
-<wire x1="-2.54" y1="0" x2="-1.524" y2="0" width="0.1524" layer="1"/>
-<wire x1="0" y1="2.54" x2="0" y2="1.524" width="0.1524" layer="1"/>
-<wire x1="0" y1="-2.54" x2="0" y2="-1.524" width="0.1524" layer="1"/>
-<wire x1="2.54" y1="0" x2="1.524" y2="0" width="0.1524" layer="1"/>
-<wire x1="-2.54" y1="0" x2="-1.524" y2="0" width="0.1524" layer="16"/>
-<wire x1="0" y1="2.54" x2="0" y2="1.524" width="0.1524" layer="16"/>
-<wire x1="0" y1="-2.54" x2="0" y2="-1.524" width="0.1524" layer="16"/>
-<wire x1="2.54" y1="0" x2="1.524" y2="0" width="0.1524" layer="16"/>
-<wire x1="0.0254" y1="0.5842" x2="0.5842" y2="0.0254" width="1.1176" layer="16" curve="-90" cap="flat"/>
-<wire x1="0.0254" y1="0.5842" x2="0.5842" y2="0.0254" width="1.1176" layer="1" curve="-90" cap="flat"/>
-<wire x1="-0.5842" y1="-0.0254" x2="-0.0254" y2="-0.5842" width="1.1176" layer="16" curve="90" cap="flat"/>
-<wire x1="-0.5842" y1="-0.0254" x2="-0.0254" y2="-0.5842" width="1.1176" layer="1" curve="90" cap="flat"/>
-<circle x="0" y="0" radius="1.27" width="0.1524" layer="49"/>
-<circle x="0" y="0" radius="1.27" width="0.1524" layer="49"/>
-<circle x="0" y="0" radius="1.27" width="0.1524" layer="1"/>
-<circle x="0" y="0" radius="1.27" width="0.1524" layer="16"/>
-<circle x="0" y="0" radius="2.54" width="0" layer="29"/>
-<circle x="0" y="0" radius="2.54" width="0" layer="30"/>
-</package>
-<package name="FIDUCIAL_1MM">
-<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" stop="no" cream="no"/>
-<polygon width="0.127" layer="29">
-<vertex x="-1" y="0" curve="90"/>
-<vertex x="0" y="-1" curve="90"/>
-<vertex x="1" y="0" curve="90"/>
-<vertex x="0" y="1" curve="90"/>
-</polygon>
-<polygon width="0.127" layer="41">
-<vertex x="-1" y="0" curve="90"/>
-<vertex x="0" y="-1" curve="90"/>
-<vertex x="1" y="0" curve="90"/>
-<vertex x="0" y="1" curve="90"/>
-</polygon>
-</package>
 <package name="TSSOP28">
 <wire x1="-4.4646" y1="-2.2828" x2="4.4646" y2="-2.2828" width="0.1524" layer="51"/>
 <wire x1="4.4646" y1="2.2828" x2="4.4646" y2="-2.2828" width="0.1524" layer="21"/>
@@ -16121,11 +16069,6 @@ chip</description>
 <text x="-1.524" y="3.556" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="VCC" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
-<symbol name="FIDUCIAL">
-<wire x1="-0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="0.762" y1="0.762" x2="-0.762" y2="-0.762" width="0.254" layer="94"/>
-<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
-</symbol>
 <symbol name="PCA9865">
 <wire x1="-17.78" y1="17.78" x2="17.78" y2="17.78" width="0.254" layer="94" style="shortdash"/>
 <wire x1="17.78" y1="17.78" x2="17.78" y2="-30.48" width="0.254" layer="94"/>
@@ -16265,30 +16208,6 @@ chip</description>
 </gates>
 <devices>
 <device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="FIDUCIAL" prefix="FID">
-<description>&lt;b&gt;Fiducial Alignment Points&lt;/b&gt;
-&lt;p&gt;Various fiducial points for machine vision alignment.&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="1X2.5" package="FIDUCIAL-1X2.5">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="ROUND" package="PASS-ROUND">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="&quot;&quot;" package="FIDUCIAL_1MM">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -17494,28 +17413,6 @@ This is an updated version of the capacitor from package: NICHICON-UX-8X10, Libr
 <part name="C13" library="rcl" deviceset="C-US" device="C0603" value="0.1uF"/>
 <part name="U$54" library="microbuilder" deviceset="FRAME_A4_ADAFRUIT" device=""/>
 <part name="U1" library="microbuilder" deviceset="PCA9685" device="" value="PCA9685"/>
-<part name="U$59" library="microbuilder" deviceset="5.0V" device=""/>
-<part name="U$60" library="microbuilder" deviceset="5.0V" device=""/>
-<part name="U$61" library="microbuilder" deviceset="5.0V" device=""/>
-<part name="U$62" library="microbuilder" deviceset="5.0V" device=""/>
-<part name="U$65" library="microbuilder" deviceset="5.0V" device=""/>
-<part name="U$66" library="microbuilder" deviceset="5.0V" device=""/>
-<part name="U$67" library="microbuilder" deviceset="5.0V" device=""/>
-<part name="U$68" library="microbuilder" deviceset="5.0V" device=""/>
-<part name="U$69" library="microbuilder" deviceset="5.0V" device=""/>
-<part name="U$70" library="microbuilder" deviceset="5.0V" device=""/>
-<part name="U$75" library="microbuilder" deviceset="GND" device=""/>
-<part name="U$76" library="microbuilder" deviceset="GND" device=""/>
-<part name="U$77" library="microbuilder" deviceset="GND" device=""/>
-<part name="U$78" library="microbuilder" deviceset="GND" device=""/>
-<part name="U$79" library="microbuilder" deviceset="GND" device=""/>
-<part name="U$80" library="microbuilder" deviceset="GND" device=""/>
-<part name="U$81" library="microbuilder" deviceset="GND" device=""/>
-<part name="U$82" library="microbuilder" deviceset="GND" device=""/>
-<part name="U$83" library="microbuilder" deviceset="GND" device=""/>
-<part name="U$84" library="microbuilder" deviceset="GND" device=""/>
-<part name="U$85" library="microbuilder" deviceset="GND" device=""/>
-<part name="U$86" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$87" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$88" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$89" library="microbuilder" deviceset="GND" device=""/>
@@ -17538,27 +17435,25 @@ This is an updated version of the capacitor from package: NICHICON-UX-8X10, Libr
 <part name="U$100" library="microbuilder" deviceset="MOUNTINGHOLE" device="2.5"/>
 <part name="U$101" library="microbuilder" deviceset="MOUNTINGHOLE" device="2.5"/>
 <part name="U$102" library="microbuilder" deviceset="MOUNTINGHOLE" device="2.5"/>
-<part name="FID3" library="microbuilder" deviceset="FIDUCIAL" device="&quot;&quot;"/>
-<part name="FID4" library="microbuilder" deviceset="FIDUCIAL" device="&quot;&quot;"/>
 <part name="LED8" library="microbuilder" deviceset="LED" device="0805" value="VCC"/>
 <part name="R36" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
 <part name="U$103" library="microbuilder" deviceset="GND" device=""/>
-<part name="R37" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
-<part name="R38" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
-<part name="R39" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
-<part name="R40" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
-<part name="R41" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
-<part name="R42" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
-<part name="R10" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
-<part name="R11" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
-<part name="R12" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
-<part name="R13" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
-<part name="R47" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
-<part name="R48" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
-<part name="R49" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
-<part name="R50" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
-<part name="R51" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
-<part name="R52" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
+<part name="RPWM7" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
+<part name="RPWM6" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
+<part name="RPWM5" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
+<part name="RPWM4" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
+<part name="RPWM3" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
+<part name="RPWM2" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
+<part name="RPWM1" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
+<part name="RPWM0" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
+<part name="RPWM15" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
+<part name="RPWM14" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
+<part name="RPWM13" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
+<part name="RPWM12" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
+<part name="RPWM11" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
+<part name="RPWM10" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
+<part name="RPWM9" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
+<part name="RPWM8" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
 <part name="U$104" library="microbuilder" deviceset="GND" device=""/>
 <part name="JP7" library="adafruit" deviceset="PINHD-1X6" device="CB"/>
 <part name="U$105" library="microbuilder" deviceset="5.0V" device=""/>
@@ -17786,28 +17681,6 @@ This is an updated version of the capacitor from package: NICHICON-UX-8X10, Libr
 <instance part="C13" gate="G$1" x="449.58" y="-96.52"/>
 <instance part="U$54" gate="G$1" x="-269.24" y="-220.98"/>
 <instance part="U1" gate="G$1" x="-139.7" y="-106.68"/>
-<instance part="U$59" gate="G$1" x="-68.58" y="-124.46"/>
-<instance part="U$60" gate="G$1" x="-68.58" y="-134.62"/>
-<instance part="U$61" gate="G$1" x="-68.58" y="-144.78"/>
-<instance part="U$62" gate="G$1" x="-68.58" y="-154.94"/>
-<instance part="U$65" gate="G$1" x="-25.4" y="-88.9"/>
-<instance part="U$66" gate="G$1" x="-25.4" y="-99.06"/>
-<instance part="U$67" gate="G$1" x="-25.4" y="-124.46"/>
-<instance part="U$68" gate="G$1" x="-25.4" y="-134.62"/>
-<instance part="U$69" gate="G$1" x="-25.4" y="-144.78"/>
-<instance part="U$70" gate="G$1" x="-25.4" y="-154.94"/>
-<instance part="U$75" gate="G$1" x="-83.82" y="-132.08"/>
-<instance part="U$76" gate="G$1" x="-83.82" y="-142.24"/>
-<instance part="U$77" gate="G$1" x="-83.82" y="-152.4"/>
-<instance part="U$78" gate="G$1" x="-40.64" y="-152.4"/>
-<instance part="U$79" gate="G$1" x="-40.64" y="-142.24"/>
-<instance part="U$80" gate="G$1" x="-40.64" y="-132.08"/>
-<instance part="U$81" gate="G$1" x="-40.64" y="-106.68"/>
-<instance part="U$82" gate="G$1" x="-40.64" y="-96.52"/>
-<instance part="U$83" gate="G$1" x="-40.64" y="-86.36"/>
-<instance part="U$84" gate="G$1" x="-40.64" y="-76.2"/>
-<instance part="U$85" gate="G$1" x="-83.82" y="-162.56"/>
-<instance part="U$86" gate="G$1" x="-40.64" y="-162.56"/>
 <instance part="U$87" gate="G$1" x="-175.26" y="-114.3"/>
 <instance part="U$88" gate="G$1" x="-175.26" y="-134.62"/>
 <instance part="U$89" gate="G$1" x="-231.14" y="-134.62"/>
@@ -17830,27 +17703,25 @@ This is an updated version of the capacitor from package: NICHICON-UX-8X10, Libr
 <instance part="U$100" gate="G$1" x="-22.86" y="-187.96"/>
 <instance part="U$101" gate="G$1" x="-27.94" y="-187.96"/>
 <instance part="U$102" gate="G$1" x="-33.02" y="-187.96"/>
-<instance part="FID3" gate="G$1" x="-17.78" y="-193.04"/>
-<instance part="FID4" gate="G$1" x="-20.32" y="-193.04"/>
 <instance part="LED8" gate="G$1" x="-203.2" y="-157.48"/>
 <instance part="R36" gate="G$1" x="-193.04" y="-157.48"/>
 <instance part="U$103" gate="G$1" x="-185.42" y="-162.56"/>
-<instance part="R37" gate="G$1" x="-88.9" y="-68.58" rot="R180"/>
-<instance part="R38" gate="G$1" x="-88.9" y="-78.74" rot="R180"/>
-<instance part="R39" gate="G$1" x="-88.9" y="-88.9" rot="R180"/>
-<instance part="R40" gate="G$1" x="-88.9" y="-99.06" rot="R180"/>
-<instance part="R41" gate="G$1" x="-88.9" y="-124.46" rot="R180"/>
-<instance part="R42" gate="G$1" x="-88.9" y="-134.62" rot="R180"/>
-<instance part="R10" gate="G$1" x="-88.9" y="-144.78" rot="R180"/>
-<instance part="R11" gate="G$1" x="-88.9" y="-154.94" rot="R180"/>
-<instance part="R12" gate="G$1" x="-45.72" y="-68.58" rot="R180"/>
-<instance part="R13" gate="G$1" x="-45.72" y="-78.74" rot="R180"/>
-<instance part="R47" gate="G$1" x="-45.72" y="-88.9" rot="R180"/>
-<instance part="R48" gate="G$1" x="-45.72" y="-99.06" rot="R180"/>
-<instance part="R49" gate="G$1" x="-45.72" y="-124.46" rot="R180"/>
-<instance part="R50" gate="G$1" x="-45.72" y="-134.62" rot="R180"/>
-<instance part="R51" gate="G$1" x="-45.72" y="-144.78" rot="R180"/>
-<instance part="R52" gate="G$1" x="-45.72" y="-154.94" rot="R180"/>
+<instance part="RPWM7" gate="G$1" x="-88.9" y="-68.58" rot="R180"/>
+<instance part="RPWM6" gate="G$1" x="-88.9" y="-76.2" rot="R180"/>
+<instance part="RPWM5" gate="G$1" x="-88.9" y="-83.82" rot="R180"/>
+<instance part="RPWM4" gate="G$1" x="-88.9" y="-93.98" rot="R180"/>
+<instance part="RPWM3" gate="G$1" x="-88.9" y="-119.38" rot="R180"/>
+<instance part="RPWM2" gate="G$1" x="-88.9" y="-129.54" rot="R180"/>
+<instance part="RPWM1" gate="G$1" x="-88.9" y="-139.7" rot="R180"/>
+<instance part="RPWM0" gate="G$1" x="-88.9" y="-149.86" rot="R180"/>
+<instance part="RPWM15" gate="G$1" x="-45.72" y="-68.58" rot="R180"/>
+<instance part="RPWM14" gate="G$1" x="-45.72" y="-78.74" rot="R180"/>
+<instance part="RPWM13" gate="G$1" x="-45.72" y="-88.9" rot="R180"/>
+<instance part="RPWM12" gate="G$1" x="-45.72" y="-99.06" rot="R180"/>
+<instance part="RPWM11" gate="G$1" x="-45.72" y="-124.46" rot="R180"/>
+<instance part="RPWM10" gate="G$1" x="-45.72" y="-134.62" rot="R180"/>
+<instance part="RPWM9" gate="G$1" x="-45.72" y="-144.78" rot="R180"/>
+<instance part="RPWM8" gate="G$1" x="-45.72" y="-154.94" rot="R180"/>
 <instance part="U$104" gate="G$1" x="-172.72" y="-73.66" rot="R180"/>
 <instance part="JP7" gate="A" x="-198.12" y="-185.42"/>
 <instance part="U$105" gate="G$1" x="-210.82" y="-177.8"/>
@@ -18124,54 +17995,6 @@ This is an updated version of the capacitor from package: NICHICON-UX-8X10, Libr
 <pinref part="D7" gate="G$1" pin="C"/>
 <wire x1="408.94" y1="-187.96" x2="408.94" y2="-193.04" width="0.1524" layer="91"/>
 <pinref part="GND9" gate="1" pin="GND"/>
-</segment>
-<segment>
-<wire x1="-76.2" y1="-129.54" x2="-83.82" y2="-129.54" width="0.1524" layer="91"/>
-<pinref part="U$75" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<wire x1="-76.2" y1="-139.7" x2="-83.82" y2="-139.7" width="0.1524" layer="91"/>
-<pinref part="U$76" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<wire x1="-76.2" y1="-149.86" x2="-83.82" y2="-149.86" width="0.1524" layer="91"/>
-<pinref part="U$77" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<wire x1="-33.02" y1="-149.86" x2="-40.64" y2="-149.86" width="0.1524" layer="91"/>
-<pinref part="U$78" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<wire x1="-33.02" y1="-139.7" x2="-40.64" y2="-139.7" width="0.1524" layer="91"/>
-<pinref part="U$79" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<wire x1="-33.02" y1="-129.54" x2="-40.64" y2="-129.54" width="0.1524" layer="91"/>
-<pinref part="U$80" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<wire x1="-33.02" y1="-104.14" x2="-40.64" y2="-104.14" width="0.1524" layer="91"/>
-<pinref part="U$81" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<wire x1="-33.02" y1="-93.98" x2="-40.64" y2="-93.98" width="0.1524" layer="91"/>
-<pinref part="U$82" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<wire x1="-33.02" y1="-83.82" x2="-40.64" y2="-83.82" width="0.1524" layer="91"/>
-<pinref part="U$83" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<wire x1="-33.02" y1="-73.66" x2="-40.64" y2="-73.66" width="0.1524" layer="91"/>
-<pinref part="U$84" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<wire x1="-76.2" y1="-160.02" x2="-83.82" y2="-160.02" width="0.1524" layer="91"/>
-<pinref part="U$85" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<wire x1="-33.02" y1="-160.02" x2="-40.64" y2="-160.02" width="0.1524" layer="91"/>
-<pinref part="U$86" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <wire x1="-160.02" y1="-109.22" x2="-175.26" y2="-109.22" width="0.1524" layer="91"/>
@@ -18869,9 +18692,9 @@ This is an updated version of the capacitor from package: NICHICON-UX-8X10, Libr
 <pinref part="U1" gate="G$1" pin="PWM0"/>
 </segment>
 <segment>
-<wire x1="-93.98" y1="-154.94" x2="-101.6" y2="-154.94" width="0.1524" layer="91"/>
-<label x="-101.6" y="-154.94" size="1.778" layer="95"/>
-<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="-93.98" y1="-149.86" x2="-101.6" y2="-149.86" width="0.1524" layer="91"/>
+<label x="-101.6" y="-149.86" size="1.778" layer="95"/>
+<pinref part="RPWM0" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="PWM1" class="0">
@@ -18881,9 +18704,9 @@ This is an updated version of the capacitor from package: NICHICON-UX-8X10, Libr
 <pinref part="U1" gate="G$1" pin="PWM1"/>
 </segment>
 <segment>
-<wire x1="-93.98" y1="-144.78" x2="-101.6" y2="-144.78" width="0.1524" layer="91"/>
-<label x="-101.6" y="-144.78" size="1.778" layer="95"/>
-<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="-93.98" y1="-139.7" x2="-101.6" y2="-139.7" width="0.1524" layer="91"/>
+<label x="-101.6" y="-139.7" size="1.778" layer="95"/>
+<pinref part="RPWM1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="PWM2" class="0">
@@ -18893,9 +18716,9 @@ This is an updated version of the capacitor from package: NICHICON-UX-8X10, Libr
 <pinref part="U1" gate="G$1" pin="PWM2"/>
 </segment>
 <segment>
-<wire x1="-93.98" y1="-134.62" x2="-101.6" y2="-134.62" width="0.1524" layer="91"/>
-<label x="-101.6" y="-134.62" size="1.778" layer="95"/>
-<pinref part="R42" gate="G$1" pin="2"/>
+<wire x1="-93.98" y1="-129.54" x2="-101.6" y2="-129.54" width="0.1524" layer="91"/>
+<label x="-101.6" y="-129.54" size="1.778" layer="95"/>
+<pinref part="RPWM2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="PWM3" class="0">
@@ -18905,9 +18728,9 @@ This is an updated version of the capacitor from package: NICHICON-UX-8X10, Libr
 <pinref part="U1" gate="G$1" pin="PWM3"/>
 </segment>
 <segment>
-<wire x1="-93.98" y1="-124.46" x2="-101.6" y2="-124.46" width="0.1524" layer="91"/>
-<label x="-101.6" y="-124.46" size="1.778" layer="95"/>
-<pinref part="R41" gate="G$1" pin="2"/>
+<wire x1="-93.98" y1="-119.38" x2="-101.6" y2="-119.38" width="0.1524" layer="91"/>
+<label x="-101.6" y="-119.38" size="1.778" layer="95"/>
+<pinref part="RPWM3" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="PWM4" class="0">
@@ -18917,9 +18740,9 @@ This is an updated version of the capacitor from package: NICHICON-UX-8X10, Libr
 <pinref part="U1" gate="G$1" pin="PWM4"/>
 </segment>
 <segment>
-<wire x1="-93.98" y1="-99.06" x2="-101.6" y2="-99.06" width="0.1524" layer="91"/>
-<label x="-101.6" y="-99.06" size="1.778" layer="95"/>
-<pinref part="R40" gate="G$1" pin="2"/>
+<wire x1="-93.98" y1="-93.98" x2="-101.6" y2="-93.98" width="0.1524" layer="91"/>
+<label x="-101.6" y="-93.98" size="1.778" layer="95"/>
+<pinref part="RPWM4" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="PWM5" class="0">
@@ -18929,19 +18752,19 @@ This is an updated version of the capacitor from package: NICHICON-UX-8X10, Libr
 <pinref part="U1" gate="G$1" pin="PWM5"/>
 </segment>
 <segment>
-<wire x1="-93.98" y1="-88.9" x2="-101.6" y2="-88.9" width="0.1524" layer="91"/>
-<label x="-101.6" y="-88.9" size="1.778" layer="95"/>
-<pinref part="R39" gate="G$1" pin="2"/>
+<wire x1="-93.98" y1="-83.82" x2="-101.6" y2="-83.82" width="0.1524" layer="91"/>
+<label x="-101.6" y="-83.82" size="1.778" layer="95"/>
+<pinref part="RPWM5" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="PWM6" class="0">
 <segment>
 <wire x1="-119.38" y1="-106.68" x2="-109.22" y2="-106.68" width="0.1524" layer="91"/>
-<wire x1="-101.6" y1="-78.74" x2="-93.98" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="-101.6" y1="-76.2" x2="-93.98" y2="-76.2" width="0.1524" layer="91"/>
 <label x="-116.84" y="-106.68" size="1.778" layer="95"/>
-<label x="-101.6" y="-78.74" size="1.778" layer="95"/>
+<label x="-101.6" y="-76.2" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="PWM6"/>
-<pinref part="R38" gate="G$1" pin="2"/>
+<pinref part="RPWM6" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="PWM7" class="0">
@@ -18953,7 +18776,7 @@ This is an updated version of the capacitor from package: NICHICON-UX-8X10, Libr
 <segment>
 <wire x1="-93.98" y1="-68.58" x2="-101.6" y2="-68.58" width="0.1524" layer="91"/>
 <label x="-101.6" y="-68.58" size="1.778" layer="95"/>
-<pinref part="R37" gate="G$1" pin="2"/>
+<pinref part="RPWM7" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="PWM8" class="0">
@@ -18965,7 +18788,7 @@ This is an updated version of the capacitor from package: NICHICON-UX-8X10, Libr
 <segment>
 <wire x1="-50.8" y1="-154.94" x2="-60.96" y2="-154.94" width="0.1524" layer="91"/>
 <label x="-60.96" y="-154.94" size="1.778" layer="95"/>
-<pinref part="R52" gate="G$1" pin="2"/>
+<pinref part="RPWM8" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="PWM9" class="0">
@@ -18977,7 +18800,7 @@ This is an updated version of the capacitor from package: NICHICON-UX-8X10, Libr
 <segment>
 <wire x1="-50.8" y1="-144.78" x2="-60.96" y2="-144.78" width="0.1524" layer="91"/>
 <label x="-60.96" y="-144.78" size="1.778" layer="95"/>
-<pinref part="R51" gate="G$1" pin="2"/>
+<pinref part="RPWM9" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="PWM10" class="0">
@@ -18989,7 +18812,7 @@ This is an updated version of the capacitor from package: NICHICON-UX-8X10, Libr
 <segment>
 <wire x1="-50.8" y1="-134.62" x2="-60.96" y2="-134.62" width="0.1524" layer="91"/>
 <label x="-60.96" y="-134.62" size="1.778" layer="95"/>
-<pinref part="R50" gate="G$1" pin="2"/>
+<pinref part="RPWM10" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="PWM11" class="0">
@@ -19001,7 +18824,7 @@ This is an updated version of the capacitor from package: NICHICON-UX-8X10, Libr
 <segment>
 <wire x1="-50.8" y1="-124.46" x2="-60.96" y2="-124.46" width="0.1524" layer="91"/>
 <label x="-60.96" y="-124.46" size="1.778" layer="95"/>
-<pinref part="R49" gate="G$1" pin="2"/>
+<pinref part="RPWM11" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="PWM12" class="0">
@@ -19013,7 +18836,7 @@ This is an updated version of the capacitor from package: NICHICON-UX-8X10, Libr
 <segment>
 <wire x1="-50.8" y1="-99.06" x2="-60.96" y2="-99.06" width="0.1524" layer="91"/>
 <label x="-60.96" y="-99.06" size="1.778" layer="95"/>
-<pinref part="R48" gate="G$1" pin="2"/>
+<pinref part="RPWM12" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="PWM13" class="0">
@@ -19025,7 +18848,7 @@ This is an updated version of the capacitor from package: NICHICON-UX-8X10, Libr
 <segment>
 <wire x1="-50.8" y1="-88.9" x2="-60.96" y2="-88.9" width="0.1524" layer="91"/>
 <label x="-60.96" y="-88.9" size="1.778" layer="95"/>
-<pinref part="R47" gate="G$1" pin="2"/>
+<pinref part="RPWM13" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="PWM14" class="0">
@@ -19037,7 +18860,7 @@ This is an updated version of the capacitor from package: NICHICON-UX-8X10, Libr
 <segment>
 <wire x1="-50.8" y1="-78.74" x2="-60.96" y2="-78.74" width="0.1524" layer="91"/>
 <label x="-60.96" y="-78.74" size="1.778" layer="95"/>
-<pinref part="R13" gate="G$1" pin="2"/>
+<pinref part="RPWM14" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="PWM15" class="0">
@@ -19049,60 +18872,10 @@ This is an updated version of the capacitor from package: NICHICON-UX-8X10, Libr
 <segment>
 <wire x1="-50.8" y1="-68.58" x2="-60.96" y2="-68.58" width="0.1524" layer="91"/>
 <label x="-60.96" y="-68.58" size="1.778" layer="95"/>
-<pinref part="R12" gate="G$1" pin="2"/>
+<pinref part="RPWM15" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="5.0V" class="0">
-<segment>
-<wire x1="-76.2" y1="-127" x2="-68.58" y2="-127" width="0.1524" layer="91"/>
-<wire x1="-68.58" y1="-127" x2="-68.58" y2="-124.46" width="0.1524" layer="91"/>
-<pinref part="U$59" gate="G$1" pin="5.0V"/>
-</segment>
-<segment>
-<wire x1="-76.2" y1="-137.16" x2="-68.58" y2="-137.16" width="0.1524" layer="91"/>
-<wire x1="-68.58" y1="-137.16" x2="-68.58" y2="-134.62" width="0.1524" layer="91"/>
-<pinref part="U$60" gate="G$1" pin="5.0V"/>
-</segment>
-<segment>
-<wire x1="-76.2" y1="-147.32" x2="-68.58" y2="-147.32" width="0.1524" layer="91"/>
-<wire x1="-68.58" y1="-147.32" x2="-68.58" y2="-144.78" width="0.1524" layer="91"/>
-<pinref part="U$61" gate="G$1" pin="5.0V"/>
-</segment>
-<segment>
-<wire x1="-76.2" y1="-157.48" x2="-68.58" y2="-157.48" width="0.1524" layer="91"/>
-<wire x1="-68.58" y1="-157.48" x2="-68.58" y2="-154.94" width="0.1524" layer="91"/>
-<pinref part="U$62" gate="G$1" pin="5.0V"/>
-</segment>
-<segment>
-<wire x1="-33.02" y1="-157.48" x2="-25.4" y2="-157.48" width="0.1524" layer="91"/>
-<wire x1="-25.4" y1="-157.48" x2="-25.4" y2="-154.94" width="0.1524" layer="91"/>
-<pinref part="U$70" gate="G$1" pin="5.0V"/>
-</segment>
-<segment>
-<wire x1="-33.02" y1="-147.32" x2="-25.4" y2="-147.32" width="0.1524" layer="91"/>
-<wire x1="-25.4" y1="-147.32" x2="-25.4" y2="-144.78" width="0.1524" layer="91"/>
-<pinref part="U$69" gate="G$1" pin="5.0V"/>
-</segment>
-<segment>
-<wire x1="-33.02" y1="-137.16" x2="-25.4" y2="-137.16" width="0.1524" layer="91"/>
-<wire x1="-25.4" y1="-137.16" x2="-25.4" y2="-134.62" width="0.1524" layer="91"/>
-<pinref part="U$68" gate="G$1" pin="5.0V"/>
-</segment>
-<segment>
-<wire x1="-33.02" y1="-127" x2="-25.4" y2="-127" width="0.1524" layer="91"/>
-<wire x1="-25.4" y1="-127" x2="-25.4" y2="-124.46" width="0.1524" layer="91"/>
-<pinref part="U$67" gate="G$1" pin="5.0V"/>
-</segment>
-<segment>
-<wire x1="-33.02" y1="-101.6" x2="-25.4" y2="-101.6" width="0.1524" layer="91"/>
-<wire x1="-25.4" y1="-101.6" x2="-25.4" y2="-99.06" width="0.1524" layer="91"/>
-<pinref part="U$66" gate="G$1" pin="5.0V"/>
-</segment>
-<segment>
-<wire x1="-33.02" y1="-91.44" x2="-25.4" y2="-91.44" width="0.1524" layer="91"/>
-<wire x1="-25.4" y1="-91.44" x2="-25.4" y2="-88.9" width="0.1524" layer="91"/>
-<pinref part="U$65" gate="G$1" pin="5.0V"/>
-</segment>
 <segment>
 <wire x1="-210.82" y1="-177.8" x2="-200.66" y2="-177.8" width="0.1524" layer="91"/>
 <pinref part="JP7" gate="A" pin="1"/>
@@ -19210,103 +18983,98 @@ This is an updated version of the capacitor from package: NICHICON-UX-8X10, Libr
 </net>
 <net name="N$14" class="0">
 <segment>
-<wire x1="-83.82" y1="-78.74" x2="-76.2" y2="-78.74" width="0.1524" layer="91"/>
-<pinref part="R38" gate="G$1" pin="1"/>
+<wire x1="-83.82" y1="-76.2" x2="-76.2" y2="-76.2" width="0.1524" layer="91"/>
+<pinref part="RPWM6" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
 <wire x1="-83.82" y1="-68.58" x2="-76.2" y2="-68.58" width="0.1524" layer="91"/>
-<pinref part="R37" gate="G$1" pin="1"/>
+<pinref part="RPWM7" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
-<wire x1="-83.82" y1="-88.9" x2="-76.2" y2="-88.9" width="0.1524" layer="91"/>
-<pinref part="R39" gate="G$1" pin="1"/>
+<wire x1="-83.82" y1="-83.82" x2="-76.2" y2="-83.82" width="0.1524" layer="91"/>
+<pinref part="RPWM5" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$24" class="0">
 <segment>
-<wire x1="-83.82" y1="-99.06" x2="-76.2" y2="-99.06" width="0.1524" layer="91"/>
-<pinref part="R40" gate="G$1" pin="1"/>
+<wire x1="-83.82" y1="-93.98" x2="-76.2" y2="-93.98" width="0.1524" layer="91"/>
+<pinref part="RPWM4" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$26" class="0">
 <segment>
-<wire x1="-83.82" y1="-124.46" x2="-76.2" y2="-124.46" width="0.1524" layer="91"/>
-<pinref part="R41" gate="G$1" pin="1"/>
+<wire x1="-83.82" y1="-119.38" x2="-76.2" y2="-119.38" width="0.1524" layer="91"/>
+<pinref part="RPWM3" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$27" class="0">
 <segment>
-<wire x1="-83.82" y1="-134.62" x2="-76.2" y2="-134.62" width="0.1524" layer="91"/>
-<pinref part="R42" gate="G$1" pin="1"/>
+<wire x1="-83.82" y1="-129.54" x2="-76.2" y2="-129.54" width="0.1524" layer="91"/>
+<pinref part="RPWM2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
-<wire x1="-83.82" y1="-144.78" x2="-76.2" y2="-144.78" width="0.1524" layer="91"/>
-<pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="-83.82" y1="-139.7" x2="-76.2" y2="-139.7" width="0.1524" layer="91"/>
+<pinref part="RPWM1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$29" class="0">
 <segment>
-<wire x1="-83.82" y1="-154.94" x2="-76.2" y2="-154.94" width="0.1524" layer="91"/>
-<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="-83.82" y1="-149.86" x2="-76.2" y2="-149.86" width="0.1524" layer="91"/>
+<pinref part="RPWM0" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$30" class="0">
 <segment>
 <wire x1="-40.64" y1="-154.94" x2="-33.02" y2="-154.94" width="0.1524" layer="91"/>
-<pinref part="R52" gate="G$1" pin="1"/>
+<pinref part="RPWM8" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$31" class="0">
 <segment>
 <wire x1="-40.64" y1="-144.78" x2="-33.02" y2="-144.78" width="0.1524" layer="91"/>
-<pinref part="R51" gate="G$1" pin="1"/>
+<pinref part="RPWM9" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$32" class="0">
 <segment>
 <wire x1="-40.64" y1="-134.62" x2="-33.02" y2="-134.62" width="0.1524" layer="91"/>
-<pinref part="R50" gate="G$1" pin="1"/>
+<pinref part="RPWM10" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$37" class="0">
 <segment>
 <wire x1="-40.64" y1="-124.46" x2="-33.02" y2="-124.46" width="0.1524" layer="91"/>
-<pinref part="R49" gate="G$1" pin="1"/>
+<pinref part="RPWM11" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$38" class="0">
 <segment>
 <wire x1="-40.64" y1="-99.06" x2="-33.02" y2="-99.06" width="0.1524" layer="91"/>
-<pinref part="R48" gate="G$1" pin="1"/>
+<pinref part="RPWM12" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$39" class="0">
 <segment>
 <wire x1="-40.64" y1="-88.9" x2="-33.02" y2="-88.9" width="0.1524" layer="91"/>
-<pinref part="R47" gate="G$1" pin="1"/>
+<pinref part="RPWM13" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$40" class="0">
 <segment>
 <wire x1="-40.64" y1="-78.74" x2="-33.02" y2="-78.74" width="0.1524" layer="91"/>
-<pinref part="R13" gate="G$1" pin="1"/>
+<pinref part="RPWM14" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$41" class="0">
 <segment>
 <wire x1="-40.64" y1="-68.58" x2="-33.02" y2="-68.58" width="0.1524" layer="91"/>
-<pinref part="R12" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<wire x1="-33.02" y1="-71.12" x2="-25.4" y2="-71.12" width="0.1524" layer="91"/>
+<pinref part="RPWM15" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
