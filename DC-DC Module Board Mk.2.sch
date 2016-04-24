@@ -17537,18 +17537,18 @@ chip</description>
 </part>
 <part name="GND39" library="supply1" deviceset="GND" device=""/>
 <part name="UFIT0" library="Connectors" deviceset="MICRO-FIT-4-SMD-HZ" device="VT" value="MICRO-FIT-4-SMD-HZVT"/>
-<part name="UFIT1" library="Connectors" deviceset="MICRO-FIT-4-SMD-HZ" device=""/>
+<part name="UFIT1" library="Connectors" deviceset="MICRO-FIT-4-SMD-HZ" device="VT" value="MICRO-FIT-4-SMD-HZVT"/>
 <part name="UFIT6" library="Connectors" deviceset="MICRO-FIT-4-SMD-HZ" device="VT" value="MICRO-FIT-4-SMD-HZVT"/>
-<part name="UFIT5" library="Connectors" deviceset="MICRO-FIT-4-SMD-HZ" device=""/>
+<part name="UFIT5" library="Connectors" deviceset="MICRO-FIT-4-SMD-HZ" device="VT" value="MICRO-FIT-4-SMD-HZVT"/>
 <part name="UFIT4" library="Connectors" deviceset="MICRO-FIT-4-SMD-HZ" device="VT" value="MICRO-FIT-4-SMD-HZVT"/>
-<part name="UFIT3" library="Connectors" deviceset="MICRO-FIT-4-SMD-HZ" device=""/>
-<part name="UFIT7" library="Connectors" deviceset="MICRO-FIT-4-SMD-HZ" device=""/>
+<part name="UFIT3" library="Connectors" deviceset="MICRO-FIT-4-SMD-HZ" device="VT" value="MICRO-FIT-4-SMD-HZVT"/>
+<part name="UFIT7" library="Connectors" deviceset="MICRO-FIT-4-SMD-HZ" device="VT" value="MICRO-FIT-4-SMD-HZVT"/>
 <part name="UFIT8" library="Connectors" deviceset="MICRO-FIT-4-SMD-HZ" device="VT" value="MICRO-FIT-4-SMD-HZVT"/>
 <part name="UFITTUBE" library="Connectors" deviceset="MICRO-FIT-4-SMD-HZ" device="VT" value="MICRO-FIT-4-SMD-HZVT"/>
 <part name="UFIT2" library="Connectors" deviceset="MICRO-FIT-4-SMD-HZ" device="VT" value="MICRO-FIT-4-SMD-HZVT"/>
 <part name="R22" library="rcl" deviceset="R-US_" device="R0603" value="120"/>
 <part name="R17" library="rcl" deviceset="R-US_" device="R0603" value="120"/>
-<part name="UFITCAN" library="Connectors" deviceset="MICRO-FIT-4-SMD-HZ" device=""/>
+<part name="UFITCAN" library="Connectors" deviceset="MICRO-FIT-4-SMD-HZ" device="VT" value="MICRO-FIT-4-SMD-HZVT"/>
 <part name="U$12" library="DiscreteComponents" deviceset="BSS138" device=""/>
 <part name="R18" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
 <part name="R30" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
@@ -17581,7 +17581,6 @@ chip</description>
 <part name="R35" library="microbuilder" deviceset="RESISTOR" device="0805" value="10K"/>
 <part name="P+12" library="microbuilder" deviceset="VCC" device=""/>
 <part name="P+13" library="microbuilder" deviceset="VCC" device=""/>
-<part name="U$99" library="microbuilder" deviceset="MOUNTINGHOLE" device="2.5"/>
 <part name="U$100" library="microbuilder" deviceset="MOUNTINGHOLE" device="2.5"/>
 <part name="U$101" library="microbuilder" deviceset="MOUNTINGHOLE" device="2.5"/>
 <part name="U$102" library="microbuilder" deviceset="MOUNTINGHOLE" device="2.5"/>
@@ -17640,6 +17639,15 @@ chip</description>
 <text x="-254" y="-63.5" size="1.778" layer="97">1 + A5 + A4 + A3 + A2 + A1 +A1 + RW</text>
 <text x="-236.22" y="-60.96" size="1.778" layer="97">I2C Address =</text>
 <text x="-243.84" y="-68.58" size="1.778" layer="97">Open = 0 / Closed = 1</text>
+<text x="330.2" y="175.26" size="1.778" layer="95">thrust2</text>
+<text x="330.2" y="195.58" size="1.778" layer="95">thrust1</text>
+<text x="330.2" y="154.94" size="1.778" layer="95">thrust3</text>
+<text x="330.2" y="134.62" size="1.778" layer="95">thrust4</text>
+<text x="330.2" y="114.3" size="1.778" layer="95">thrust5</text>
+<text x="330.2" y="93.98" size="1.778" layer="95">thrust6</text>
+<text x="330.2" y="73.66" size="1.778" layer="95">thrust7</text>
+<text x="330.2" y="53.34" size="1.778" layer="95">thrust8</text>
+<text x="441.96" y="172.72" size="1.778" layer="95">pwm chan 0</text>
 </plain>
 <instances>
 <instance part="GND3" gate="1" x="205.74" y="134.62"/>
@@ -17807,12 +17815,12 @@ chip</description>
 <attribute name="VALUE" x="68.58" y="68.58" size="1.778" layer="96"/>
 <attribute name="NAME" x="68.58" y="71.12" size="1.778" layer="95"/>
 </instance>
-<instance part="UFIT0" gate="G$1" x="314.96" y="193.04" rot="R270"/>
-<instance part="UFIT1" gate="G$1" x="314.96" y="172.72" rot="R270"/>
-<instance part="UFIT6" gate="G$1" x="314.96" y="152.4" rot="R270"/>
-<instance part="UFIT5" gate="G$1" x="314.96" y="132.08" rot="R270"/>
-<instance part="UFIT4" gate="G$1" x="314.96" y="111.76" rot="R270"/>
-<instance part="UFIT3" gate="G$1" x="314.96" y="91.44" rot="R270"/>
+<instance part="UFIT0" gate="G$1" x="314.96" y="172.72" rot="R270"/>
+<instance part="UFIT1" gate="G$1" x="314.96" y="193.04" rot="R270"/>
+<instance part="UFIT6" gate="G$1" x="314.96" y="91.44" rot="R270"/>
+<instance part="UFIT5" gate="G$1" x="314.96" y="111.76" rot="R270"/>
+<instance part="UFIT4" gate="G$1" x="314.96" y="132.08" rot="R270"/>
+<instance part="UFIT3" gate="G$1" x="314.96" y="152.4" rot="R270"/>
 <instance part="UFIT7" gate="G$1" x="314.96" y="71.12" rot="R270"/>
 <instance part="UFIT8" gate="G$1" x="314.96" y="50.8" rot="R270"/>
 <instance part="UFITTUBE" gate="G$1" x="429.26" y="187.96" rot="R270"/>
@@ -17854,7 +17862,6 @@ chip</description>
 <instance part="R35" gate="G$1" x="-228.6" y="-175.26" rot="R90"/>
 <instance part="P+12" gate="VCC" x="-220.98" y="-167.64"/>
 <instance part="P+13" gate="VCC" x="-228.6" y="-167.64"/>
-<instance part="U$99" gate="G$1" x="-17.78" y="-187.96"/>
 <instance part="U$100" gate="G$1" x="-22.86" y="-187.96"/>
 <instance part="U$101" gate="G$1" x="-27.94" y="-187.96"/>
 <instance part="U$102" gate="G$1" x="-33.02" y="-187.96"/>
@@ -18397,33 +18404,18 @@ chip</description>
 </segment>
 <segment>
 <pinref part="UFIT0" gate="G$1" pin="P1"/>
-<wire x1="322.58" y1="185.42" x2="327.66" y2="185.42" width="0.1524" layer="91"/>
-<label x="327.66" y="185.42" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="UFIT1" gate="G$1" pin="P1"/>
 <wire x1="322.58" y1="165.1" x2="327.66" y2="165.1" width="0.1524" layer="91"/>
 <label x="327.66" y="165.1" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="UFIT6" gate="G$1" pin="P1"/>
-<wire x1="322.58" y1="144.78" x2="327.66" y2="144.78" width="0.1524" layer="91"/>
-<label x="327.66" y="144.78" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="UFIT5" gate="G$1" pin="P1"/>
-<wire x1="322.58" y1="124.46" x2="327.66" y2="124.46" width="0.1524" layer="91"/>
-<label x="327.66" y="124.46" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="UFIT4" gate="G$1" pin="P1"/>
-<wire x1="322.58" y1="104.14" x2="327.66" y2="104.14" width="0.1524" layer="91"/>
-<label x="327.66" y="104.14" size="1.27" layer="95" xref="yes"/>
+<pinref part="UFIT1" gate="G$1" pin="P1"/>
+<wire x1="322.58" y1="185.42" x2="327.66" y2="185.42" width="0.1524" layer="91"/>
+<label x="327.66" y="185.42" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="UFIT3" gate="G$1" pin="P1"/>
-<wire x1="322.58" y1="83.82" x2="327.66" y2="83.82" width="0.1524" layer="91"/>
-<label x="327.66" y="83.82" size="1.27" layer="95" xref="yes"/>
+<wire x1="322.58" y1="144.78" x2="327.66" y2="144.78" width="0.1524" layer="91"/>
+<label x="327.66" y="144.78" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="UFIT7" gate="G$1" pin="P1"/>
@@ -18461,6 +18453,18 @@ chip</description>
 <pinref part="U$4" gate="G$1" pin="GND"/>
 <wire x1="246.38" y1="-35.56" x2="251.46" y2="-35.56" width="0.1524" layer="91"/>
 <label x="246.38" y="-35.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="322.58" y1="124.46" x2="327.66" y2="124.46" width="0.1524" layer="91"/>
+<label x="327.66" y="124.46" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="322.58" y1="104.14" x2="327.66" y2="104.14" width="0.1524" layer="91"/>
+<label x="327.66" y="104.14" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="322.58" y1="83.82" x2="327.66" y2="83.82" width="0.1524" layer="91"/>
+<label x="327.66" y="83.82" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -18867,6 +18871,11 @@ chip</description>
 <label x="-101.6" y="-91.44" size="1.778" layer="95"/>
 <pinref part="RPWM1" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<pinref part="UFIT1" gate="G$1" pin="P4"/>
+<wire x1="322.58" y1="200.66" x2="327.66" y2="200.66" width="0.1524" layer="91"/>
+<label x="327.66" y="200.66" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PWM2" class="0">
 <segment>
@@ -18878,6 +18887,11 @@ chip</description>
 <wire x1="-93.98" y1="-88.9" x2="-101.6" y2="-88.9" width="0.1524" layer="91"/>
 <label x="-101.6" y="-88.9" size="1.778" layer="95"/>
 <pinref part="RPWM2" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="UFIT0" gate="G$1" pin="P4"/>
+<wire x1="322.58" y1="180.34" x2="327.66" y2="180.34" width="0.1524" layer="91"/>
+<label x="327.66" y="180.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWM3" class="0">
@@ -18903,6 +18917,11 @@ chip</description>
 <label x="-101.6" y="-76.2" size="1.778" layer="95"/>
 <pinref part="RPWM4" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<pinref part="UFIT4" gate="G$1" pin="P4"/>
+<wire x1="322.58" y1="139.7" x2="327.66" y2="139.7" width="0.1524" layer="91"/>
+<label x="327.66" y="139.7" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PWM5" class="0">
 <segment>
@@ -18915,6 +18934,11 @@ chip</description>
 <label x="-101.6" y="-73.66" size="1.778" layer="95"/>
 <pinref part="RPWM5" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<pinref part="UFIT5" gate="G$1" pin="P4"/>
+<wire x1="322.58" y1="119.38" x2="327.66" y2="119.38" width="0.1524" layer="91"/>
+<label x="327.66" y="119.38" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PWM6" class="0">
 <segment>
@@ -18924,6 +18948,11 @@ chip</description>
 <label x="-101.6" y="-71.12" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="PWM6"/>
 <pinref part="RPWM6" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="UFIT6" gate="G$1" pin="P4"/>
+<wire x1="322.58" y1="99.06" x2="327.66" y2="99.06" width="0.1524" layer="91"/>
+<label x="327.66" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWM7" class="0">
@@ -18937,6 +18966,11 @@ chip</description>
 <label x="-101.6" y="-68.58" size="1.778" layer="95"/>
 <pinref part="RPWM7" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<pinref part="UFIT7" gate="G$1" pin="P4"/>
+<wire x1="322.58" y1="78.74" x2="327.66" y2="78.74" width="0.1524" layer="91"/>
+<label x="327.66" y="78.74" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PWM8" class="0">
 <segment>
@@ -18948,6 +18982,11 @@ chip</description>
 <wire x1="-50.8" y1="-93.98" x2="-60.96" y2="-93.98" width="0.1524" layer="91"/>
 <label x="-60.96" y="-93.98" size="1.778" layer="95"/>
 <pinref part="RPWM8" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="UFIT8" gate="G$1" pin="P4"/>
+<wire x1="322.58" y1="58.42" x2="327.66" y2="58.42" width="0.1524" layer="91"/>
+<label x="327.66" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWM9" class="0">
@@ -19250,6 +19289,13 @@ chip</description>
 <wire x1="-40.64" y1="-68.58" x2="-33.02" y2="-68.58" width="0.1524" layer="91"/>
 <pinref part="RPWM15" gate="G$1" pin="1"/>
 <pinref part="JP4" gate="A" pin="1"/>
+</segment>
+</net>
+<net name="PMW3" class="0">
+<segment>
+<pinref part="UFIT3" gate="G$1" pin="P4"/>
+<wire x1="322.58" y1="160.02" x2="327.66" y2="160.02" width="0.1524" layer="91"/>
+<label x="327.66" y="160.02" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
