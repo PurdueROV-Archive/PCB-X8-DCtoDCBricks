@@ -17648,6 +17648,11 @@ chip</description>
 <text x="330.2" y="73.66" size="1.778" layer="95">thrust7</text>
 <text x="330.2" y="53.34" size="1.778" layer="95">thrust8</text>
 <text x="441.96" y="172.72" size="1.778" layer="95">pwm chan 0</text>
+<text x="353.06" y="93.98" size="1.778" layer="97">had a weird
+disconnect
+problem, 
+grid was
+unchanged</text>
 </plain>
 <instances>
 <instance part="GND3" gate="1" x="205.74" y="134.62"/>
@@ -17890,10 +17895,10 @@ chip</description>
 <instance part="U$4" gate="G$1" x="223.52" y="-55.88"/>
 <instance part="C22V1" gate="G$1" x="60.96" y="143.256"/>
 <instance part="C22V2" gate="G$1" x="63.5" y="70.866"/>
-<instance part="JP1" gate="A" x="-73.66" y="-91.44"/>
-<instance part="JP2" gate="A" x="-73.66" y="-73.66"/>
-<instance part="JP3" gate="A" x="-30.48" y="-91.44"/>
-<instance part="JP4" gate="A" x="-30.48" y="-73.66"/>
+<instance part="JP1" gate="A" x="-78.74" y="-88.9" rot="R180"/>
+<instance part="JP2" gate="A" x="-78.74" y="-71.12" rot="R180"/>
+<instance part="JP3" gate="A" x="-35.56" y="-88.9" rot="R180"/>
+<instance part="JP4" gate="A" x="-35.56" y="-71.12" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -18455,16 +18460,31 @@ chip</description>
 <label x="246.38" y="-35.56" size="1.778" layer="95"/>
 </segment>
 <segment>
+<wire x1="335.28" y1="124.46" x2="340.36" y2="124.46" width="0.1524" layer="91"/>
+<label x="340.36" y="124.46" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="330.2" y1="104.14" x2="335.28" y2="104.14" width="0.1524" layer="91"/>
+<label x="335.28" y="104.14" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="330.2" y1="83.82" x2="335.28" y2="83.82" width="0.1524" layer="91"/>
+<label x="335.28" y="83.82" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="UFIT4" gate="G$1" pin="P1"/>
 <wire x1="322.58" y1="124.46" x2="327.66" y2="124.46" width="0.1524" layer="91"/>
-<label x="327.66" y="124.46" size="1.27" layer="95" xref="yes"/>
+<label x="325.12" y="124.46" size="1.778" layer="95"/>
 </segment>
 <segment>
+<pinref part="UFIT5" gate="G$1" pin="P1"/>
 <wire x1="322.58" y1="104.14" x2="327.66" y2="104.14" width="0.1524" layer="91"/>
-<label x="327.66" y="104.14" size="1.27" layer="95" xref="yes"/>
+<label x="322.58" y="104.14" size="1.778" layer="95"/>
 </segment>
 <segment>
+<pinref part="UFIT6" gate="G$1" pin="P1"/>
 <wire x1="322.58" y1="83.82" x2="327.66" y2="83.82" width="0.1524" layer="91"/>
-<label x="327.66" y="83.82" size="1.27" layer="95" xref="yes"/>
+<label x="322.58" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -19178,112 +19198,112 @@ chip</description>
 <segment>
 <wire x1="-83.82" y1="-71.12" x2="-76.2" y2="-71.12" width="0.1524" layer="91"/>
 <pinref part="RPWM6" gate="G$1" pin="1"/>
-<pinref part="JP2" gate="A" pin="2"/>
+<pinref part="JP2" gate="A" pin="3"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
 <wire x1="-83.82" y1="-68.58" x2="-76.2" y2="-68.58" width="0.1524" layer="91"/>
 <pinref part="RPWM7" gate="G$1" pin="1"/>
-<pinref part="JP2" gate="A" pin="1"/>
+<pinref part="JP2" gate="A" pin="4"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
 <wire x1="-83.82" y1="-73.66" x2="-76.2" y2="-73.66" width="0.1524" layer="91"/>
 <pinref part="RPWM5" gate="G$1" pin="1"/>
-<pinref part="JP2" gate="A" pin="3"/>
+<pinref part="JP2" gate="A" pin="2"/>
 </segment>
 </net>
 <net name="N$24" class="0">
 <segment>
 <wire x1="-83.82" y1="-76.2" x2="-76.2" y2="-76.2" width="0.1524" layer="91"/>
 <pinref part="RPWM4" gate="G$1" pin="1"/>
-<pinref part="JP2" gate="A" pin="4"/>
+<pinref part="JP2" gate="A" pin="1"/>
 </segment>
 </net>
 <net name="N$26" class="0">
 <segment>
 <wire x1="-83.82" y1="-86.36" x2="-76.2" y2="-86.36" width="0.1524" layer="91"/>
 <pinref part="RPWM3" gate="G$1" pin="1"/>
-<pinref part="JP1" gate="A" pin="1"/>
+<pinref part="JP1" gate="A" pin="4"/>
 </segment>
 </net>
 <net name="N$27" class="0">
 <segment>
 <wire x1="-83.82" y1="-88.9" x2="-76.2" y2="-88.9" width="0.1524" layer="91"/>
 <pinref part="RPWM2" gate="G$1" pin="1"/>
-<pinref part="JP1" gate="A" pin="2"/>
+<pinref part="JP1" gate="A" pin="3"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
 <wire x1="-83.82" y1="-91.44" x2="-76.2" y2="-91.44" width="0.1524" layer="91"/>
 <pinref part="RPWM1" gate="G$1" pin="1"/>
-<pinref part="JP1" gate="A" pin="3"/>
+<pinref part="JP1" gate="A" pin="2"/>
 </segment>
 </net>
 <net name="N$29" class="0">
 <segment>
 <wire x1="-83.82" y1="-93.98" x2="-76.2" y2="-93.98" width="0.1524" layer="91"/>
 <pinref part="RPWM0" gate="G$1" pin="1"/>
-<pinref part="JP1" gate="A" pin="4"/>
+<pinref part="JP1" gate="A" pin="1"/>
 </segment>
 </net>
 <net name="N$30" class="0">
 <segment>
 <wire x1="-40.64" y1="-93.98" x2="-33.02" y2="-93.98" width="0.1524" layer="91"/>
 <pinref part="RPWM8" gate="G$1" pin="1"/>
-<pinref part="JP3" gate="A" pin="4"/>
+<pinref part="JP3" gate="A" pin="1"/>
 </segment>
 </net>
 <net name="N$31" class="0">
 <segment>
 <wire x1="-40.64" y1="-91.44" x2="-33.02" y2="-91.44" width="0.1524" layer="91"/>
 <pinref part="RPWM9" gate="G$1" pin="1"/>
-<pinref part="JP3" gate="A" pin="3"/>
+<pinref part="JP3" gate="A" pin="2"/>
 </segment>
 </net>
 <net name="N$32" class="0">
 <segment>
 <wire x1="-40.64" y1="-88.9" x2="-33.02" y2="-88.9" width="0.1524" layer="91"/>
 <pinref part="RPWM10" gate="G$1" pin="1"/>
-<pinref part="JP3" gate="A" pin="2"/>
+<pinref part="JP3" gate="A" pin="3"/>
 </segment>
 </net>
 <net name="N$37" class="0">
 <segment>
 <wire x1="-40.64" y1="-86.36" x2="-33.02" y2="-86.36" width="0.1524" layer="91"/>
 <pinref part="RPWM11" gate="G$1" pin="1"/>
-<pinref part="JP3" gate="A" pin="1"/>
+<pinref part="JP3" gate="A" pin="4"/>
 </segment>
 </net>
 <net name="N$38" class="0">
 <segment>
 <wire x1="-40.64" y1="-76.2" x2="-33.02" y2="-76.2" width="0.1524" layer="91"/>
 <pinref part="RPWM12" gate="G$1" pin="1"/>
-<pinref part="JP4" gate="A" pin="4"/>
+<pinref part="JP4" gate="A" pin="1"/>
 </segment>
 </net>
 <net name="N$39" class="0">
 <segment>
 <wire x1="-40.64" y1="-73.66" x2="-33.02" y2="-73.66" width="0.1524" layer="91"/>
 <pinref part="RPWM13" gate="G$1" pin="1"/>
-<pinref part="JP4" gate="A" pin="3"/>
+<pinref part="JP4" gate="A" pin="2"/>
 </segment>
 </net>
 <net name="N$40" class="0">
 <segment>
 <wire x1="-40.64" y1="-71.12" x2="-33.02" y2="-71.12" width="0.1524" layer="91"/>
 <pinref part="RPWM14" gate="G$1" pin="1"/>
-<pinref part="JP4" gate="A" pin="2"/>
+<pinref part="JP4" gate="A" pin="3"/>
 </segment>
 </net>
 <net name="N$41" class="0">
 <segment>
 <wire x1="-40.64" y1="-68.58" x2="-33.02" y2="-68.58" width="0.1524" layer="91"/>
 <pinref part="RPWM15" gate="G$1" pin="1"/>
-<pinref part="JP4" gate="A" pin="1"/>
+<pinref part="JP4" gate="A" pin="4"/>
 </segment>
 </net>
 <net name="PMW3" class="0">
@@ -19897,4 +19917,10 @@ chip</description>
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
