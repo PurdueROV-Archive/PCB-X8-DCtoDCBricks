@@ -26728,7 +26728,7 @@ design rules under a new name.</description>
 <element name="U$100" library="microbuilder" package="MOUNTINGHOLE_2.5_PLATED" value="MOUNTINGHOLE2.5" x="4.72" y="96"/>
 <element name="U$101" library="microbuilder" package="MOUNTINGHOLE_2.5_PLATED" value="MOUNTINGHOLE2.5" x="172.26" y="96"/>
 <element name="U$102" library="microbuilder" package="MOUNTINGHOLE_2.5_PLATED" value="MOUNTINGHOLE2.5" x="172.7" y="3.4"/>
-<element name="LED8" library="microbuilder" package="CHIPLED_0805" value="VCC" x="211.07" y="50.66"/>
+<element name="LED8" library="microbuilder" package="CHIPLED_0805" value="VCC" x="172.36" y="59.53" rot="R270"/>
 <element name="R36" library="microbuilder" package="0805" value="220" x="172.29" y="69.22"/>
 <element name="RPWM7" library="microbuilder" package="0805" value="220" x="169.89" y="22.41" rot="R180"/>
 <element name="RPWM6" library="microbuilder" package="0805" value="220" x="163.34" y="25.01" rot="R180"/>
@@ -27952,7 +27952,7 @@ design rules under a new name.</description>
 <wire x1="155.09" y1="64.82" x2="163.77" y2="69.45" width="0" layer="19" extent="16-16"/>
 <wire x1="146.96" y1="59.76" x2="155.09" y2="64.82" width="0" layer="19" extent="16-16"/>
 <wire x1="148.555" y1="29.6578" x2="146.96" y2="59.76" width="0" layer="19" extent="1-1"/>
-<wire x1="211.07" y1="49.61" x2="167.96" y2="64.88" width="0" layer="19" extent="1-1"/>
+<wire x1="171.31" y1="59.53" x2="167.96" y2="64.88" width="0" layer="19" extent="1-1"/>
 <wire x1="6.19" y1="7.38" x2="148.555" y2="29.6578" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OE">
@@ -27967,7 +27967,7 @@ design rules under a new name.</description>
 <signal name="N$9">
 <contactref element="LED8" pad="C"/>
 <contactref element="R36" pad="1"/>
-<wire x1="211.07" y1="51.71" x2="171.34" y2="69.22" width="0" layer="19" extent="1-1"/>
+<wire x1="173.41" y1="59.53" x2="171.34" y2="69.22" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$14">
 <contactref element="RPWM6" pad="1"/>
