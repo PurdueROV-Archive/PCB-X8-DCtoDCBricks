@@ -18536,6 +18536,45 @@ unchanged</text>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <wire x1="373.38" y1="-35.56" x2="373.38" y2="-40.64" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<wire x1="-210.82" y1="-177.8" x2="-200.66" y2="-177.8" width="0.1524" layer="91"/>
+<pinref part="JP7" gate="A" pin="1"/>
+<pinref part="U$105" gate="G$1" pin="5.0V"/>
+</segment>
+<segment>
+<wire x1="-180.34" y1="-88.9" x2="-180.34" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="-180.34" y1="-91.44" x2="-180.34" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="-180.34" y1="-91.44" x2="-160.02" y2="-91.44" width="0.1524" layer="91"/>
+<junction x="-180.34" y="-91.44"/>
+<pinref part="P+6" gate="VCC" pin="VCC"/>
+<pinref part="C3" gate="G$1" pin="P$1"/>
+<pinref part="U1" gate="G$1" pin="VDD"/>
+</segment>
+<segment>
+<wire x1="-200.66" y1="-180.34" x2="-213.36" y2="-180.34" width="0.1524" layer="91"/>
+<wire x1="-213.36" y1="-180.34" x2="-213.36" y2="-157.48" width="0.1524" layer="91"/>
+<wire x1="-213.36" y1="-157.48" x2="-213.36" y2="-152.4" width="0.1524" layer="91"/>
+<wire x1="-213.36" y1="-157.48" x2="-208.28" y2="-157.48" width="0.1524" layer="91"/>
+<junction x="-213.36" y="-157.48"/>
+<pinref part="P+11" gate="VCC" pin="VCC"/>
+<pinref part="LED8" gate="G$1" pin="A"/>
+<pinref part="JP7" gate="A" pin="2"/>
+</segment>
+<segment>
+<wire x1="-228.6" y1="-170.18" x2="-228.6" y2="-167.64" width="0.1524" layer="91"/>
+<pinref part="R35" gate="G$1" pin="2"/>
+<pinref part="P+13" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<wire x1="-220.98" y1="-170.18" x2="-220.98" y2="-167.64" width="0.1524" layer="91"/>
+<pinref part="R34" gate="G$1" pin="2"/>
+<pinref part="P+12" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="VIN"/>
+<wire x1="246.38" y1="-27.94" x2="251.46" y2="-27.94" width="0.1524" layer="91"/>
+<label x="246.38" y="-27.94" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="CANL" class="0">
 <segment>
@@ -19086,13 +19125,6 @@ unchanged</text>
 <pinref part="RPWM15" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="5.0V" class="0">
-<segment>
-<wire x1="-210.82" y1="-177.8" x2="-200.66" y2="-177.8" width="0.1524" layer="91"/>
-<pinref part="JP7" gate="A" pin="1"/>
-<pinref part="U$105" gate="G$1" pin="5.0V"/>
-</segment>
-</net>
 <net name="A0" class="0">
 <segment>
 <wire x1="-160.02" y1="-111.76" x2="-170.18" y2="-111.76" width="0.1524" layer="91"/>
@@ -19133,42 +19165,6 @@ unchanged</text>
 <wire x1="-160.02" y1="-124.46" x2="-170.18" y2="-124.46" width="0.1524" layer="91"/>
 <label x="-170.18" y="-124.46" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="A5"/>
-</segment>
-</net>
-<net name="VCC" class="0">
-<segment>
-<wire x1="-180.34" y1="-88.9" x2="-180.34" y2="-91.44" width="0.1524" layer="91"/>
-<wire x1="-180.34" y1="-91.44" x2="-180.34" y2="-93.98" width="0.1524" layer="91"/>
-<wire x1="-180.34" y1="-91.44" x2="-160.02" y2="-91.44" width="0.1524" layer="91"/>
-<junction x="-180.34" y="-91.44"/>
-<pinref part="P+6" gate="VCC" pin="VCC"/>
-<pinref part="C3" gate="G$1" pin="P$1"/>
-<pinref part="U1" gate="G$1" pin="VDD"/>
-</segment>
-<segment>
-<wire x1="-200.66" y1="-180.34" x2="-213.36" y2="-180.34" width="0.1524" layer="91"/>
-<wire x1="-213.36" y1="-180.34" x2="-213.36" y2="-157.48" width="0.1524" layer="91"/>
-<wire x1="-213.36" y1="-157.48" x2="-213.36" y2="-152.4" width="0.1524" layer="91"/>
-<wire x1="-213.36" y1="-157.48" x2="-208.28" y2="-157.48" width="0.1524" layer="91"/>
-<junction x="-213.36" y="-157.48"/>
-<pinref part="P+11" gate="VCC" pin="VCC"/>
-<pinref part="LED8" gate="G$1" pin="A"/>
-<pinref part="JP7" gate="A" pin="2"/>
-</segment>
-<segment>
-<wire x1="-228.6" y1="-170.18" x2="-228.6" y2="-167.64" width="0.1524" layer="91"/>
-<pinref part="R35" gate="G$1" pin="2"/>
-<pinref part="P+13" gate="VCC" pin="VCC"/>
-</segment>
-<segment>
-<wire x1="-220.98" y1="-170.18" x2="-220.98" y2="-167.64" width="0.1524" layer="91"/>
-<pinref part="R34" gate="G$1" pin="2"/>
-<pinref part="P+12" gate="VCC" pin="VCC"/>
-</segment>
-<segment>
-<pinref part="U$4" gate="G$1" pin="VIN"/>
-<wire x1="246.38" y1="-27.94" x2="251.46" y2="-27.94" width="0.1524" layer="91"/>
-<label x="246.38" y="-27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="OE" class="0">
