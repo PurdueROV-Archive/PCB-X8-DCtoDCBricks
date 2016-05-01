@@ -17555,7 +17555,7 @@ chip</description>
 <part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="PWM_OUT_3V3" library="pinhead" deviceset="PINHD-1X1" device=""/>
-<part name="PWM_OUT" library="pinhead" deviceset="PINHD-1X1" device=""/>
+<part name="PWM0" library="pinhead" deviceset="PINHD-1X1" device=""/>
 <part name="CAN_TX" library="pinhead" deviceset="PINHD-1X1" device=""/>
 <part name="CAN_RX" library="pinhead" deviceset="PINHD-1X1" device=""/>
 <part name="D7" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED"/>
@@ -17839,7 +17839,7 @@ unchanged</text>
 <instance part="+3V7" gate="G$1" x="345.44" y="-33.02"/>
 <instance part="P+1" gate="1" x="373.38" y="-33.02"/>
 <instance part="PWM_OUT_3V3" gate="G$1" x="347.98" y="-63.5"/>
-<instance part="PWM_OUT" gate="G$1" x="388.62" y="-63.5"/>
+<instance part="PWM0" gate="G$1" x="388.62" y="-63.5"/>
 <instance part="CAN_TX" gate="G$1" x="464.82" y="-88.9" rot="R180"/>
 <instance part="CAN_RX" gate="G$1" x="464.82" y="-106.68" rot="R180"/>
 <instance part="D7" gate="G$1" x="408.94" y="-182.88"/>
@@ -18826,27 +18826,6 @@ unchanged</text>
 <wire x1="337.82" y1="-160.02" x2="337.82" y2="-152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="PWM_OUT" class="0">
-<segment>
-<pinref part="R18" gate="G$1" pin="1"/>
-<wire x1="373.38" y1="-53.34" x2="375.92" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="375.92" y1="-53.34" x2="388.62" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="373.38" y1="-50.8" x2="373.38" y2="-53.34" width="0.1524" layer="91"/>
-<pinref part="U$12" gate="G$1" pin="D"/>
-<wire x1="365.76" y1="-53.34" x2="373.38" y2="-53.34" width="0.1524" layer="91"/>
-<junction x="373.38" y="-53.34"/>
-<label x="378.46" y="-53.34" size="1.778" layer="95"/>
-<wire x1="375.92" y1="-53.34" x2="375.92" y2="-63.5" width="0.1524" layer="91"/>
-<junction x="375.92" y="-53.34"/>
-<pinref part="PWM_OUT" gate="G$1" pin="1"/>
-<wire x1="375.92" y1="-63.5" x2="386.08" y2="-63.5" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="UFIT2" gate="G$1" pin="P4"/>
-<wire x1="436.88" y1="167.64" x2="441.96" y2="167.64" width="0.1524" layer="91"/>
-<label x="441.96" y="167.64" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="PWM_IN" class="0">
 <segment>
 <wire x1="350.52" y1="-53.34" x2="345.44" y2="-53.34" width="0.1524" layer="91"/>
@@ -18873,6 +18852,25 @@ unchanged</text>
 <wire x1="-93.98" y1="-93.98" x2="-101.6" y2="-93.98" width="0.1524" layer="91"/>
 <label x="-101.6" y="-93.98" size="1.778" layer="95"/>
 <pinref part="RPWM0" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="R18" gate="G$1" pin="1"/>
+<wire x1="373.38" y1="-53.34" x2="375.92" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="375.92" y1="-53.34" x2="388.62" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="373.38" y1="-50.8" x2="373.38" y2="-53.34" width="0.1524" layer="91"/>
+<pinref part="U$12" gate="G$1" pin="D"/>
+<wire x1="365.76" y1="-53.34" x2="373.38" y2="-53.34" width="0.1524" layer="91"/>
+<junction x="373.38" y="-53.34"/>
+<label x="378.46" y="-53.34" size="1.778" layer="95"/>
+<wire x1="375.92" y1="-53.34" x2="375.92" y2="-63.5" width="0.1524" layer="91"/>
+<junction x="375.92" y="-53.34"/>
+<pinref part="PWM0" gate="G$1" pin="1"/>
+<wire x1="375.92" y1="-63.5" x2="386.08" y2="-63.5" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="UFIT2" gate="G$1" pin="P4"/>
+<wire x1="436.88" y1="167.64" x2="441.96" y2="167.64" width="0.1524" layer="91"/>
+<label x="441.96" y="167.64" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PWM1" class="0">
