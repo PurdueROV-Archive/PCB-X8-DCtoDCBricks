@@ -26942,6 +26942,12 @@ design rules under a new name.</description>
 <wire x1="154.0002" y1="20.8788" x2="157.8864" y2="16.9926" width="0.3048" layer="1"/>
 <wire x1="157.8864" y1="16.9926" x2="157.8864" y2="16.2306" width="0.3048" layer="1"/>
 <wire x1="157.8864" y1="16.2306" x2="157.734" y2="16.0782" width="0.3048" layer="1"/>
+<via x="164.973" y="53.9496" extent="1-16" drill="0.6"/>
+<via x="167.9448" y="58.8264" extent="1-16" drill="0.6"/>
+<via x="173.6598" y="60.8076" extent="1-16" drill="0.6"/>
+<via x="173.5836" y="54.3306" extent="1-16" drill="0.6"/>
+<via x="160.1724" y="19.5072" extent="1-16" drill="0.6"/>
+<via x="150.7236" y="18.8976" extent="1-16" drill="0.6"/>
 </signal>
 <signal name="N$7">
 <contactref element="R9" pad="1"/>
@@ -28722,18 +28728,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="PMW3">
 <contactref element="UFIT3" pad="C4"/>
-</signal>
-<signal name="N$5">
-<via x="173.6598" y="60.8076" extent="1-16" drill="0.6"/>
-</signal>
-<signal name="N$47">
-<via x="164.973" y="53.9496" extent="1-16" drill="0.6"/>
-</signal>
-<signal name="N$48">
-<via x="167.9448" y="58.8264" extent="1-16" drill="0.6"/>
-</signal>
-<signal name="N$49">
-<via x="173.5836" y="54.3306" extent="1-16" drill="0.6"/>
 </signal>
 </signals>
 <errors>
